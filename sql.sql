@@ -11,7 +11,7 @@ CREATE TABLE universities (
 
 -- Create Subject Table
 CREATE TABLE subjects (
-    sub_id INT PRIMARY KEY AUTO_INCREMENT,
+    sub_id INT PRIMARY KEY AUTO_INCREMENT,--starts from 5f
     sub_name VARCHAR(255),
     university_id INT,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
@@ -28,6 +28,22 @@ CREATE TABLE alumni (
     university_id INT,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
+
+-- Delete graduation_year column from Alumni table
+ALTER TABLE Alumni
+DROP COLUMN graduation_year;
+
+-- Add batch column to Alumni table
+ALTER TABLE Alumni
+ADD COLUMN batch INT;
+
+-- Rename employer to Current Employer in Alumni table
+ALTER TABLE Alumni
+CHANGE COLUMN employer `Current Employer` VARCHAR(255);
+-- Add Current Designation field to Alumni table
+ALTER TABLE Alumni
+ADD COLUMN `Current Designation` VARCHAR(255);
+
 
 -- Create Overall Ranking Table
 CREATE TABLE overall_rankings (
