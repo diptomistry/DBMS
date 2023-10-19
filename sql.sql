@@ -314,8 +314,8 @@ VALUES
   ('Roza Tabassum Ratri', 'BSc 20th', 'Bit Mascot (Pvt.) Ltd.', 'Bangladesh', 'Assistant Project Manager', 'BSc', 1),
   ('Shafayat Nabi Chowdhury', 'BSc 20th', 'AnyConnect LLC', 'Bangladesh', 'Software Engineer', 'BSc', 1),
   ('Swasti Sunder Das', 'BSc 20th', 'KONA Software Lab Limited', 'Bangladesh', 'Jr. Engineer', 'BSc', 1),
-  ('Tanvir Shahriar Rifat', 'BSc 20th', 'Therap (BD) Ltd', 'Bangladesh', 'Software Engineer', 'BSc', 1),
-  ('Md. Saiful Islam', 'BSc 19th', 'University of Memphis', 'USA', 'Graduate Research Assistant', 'BSc', 1)
+  ('Tanvir Shahriar Rifat', 'BSc 20th', 'Therap (BD) Ltd', 'Bangladesh', 'Software Engineer', 'BSc', 1)
+  
 ;
 
 
