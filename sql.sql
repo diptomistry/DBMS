@@ -264,7 +264,33 @@ VALUES
 -- Add as many records as needed, following the same format.
 
 
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Jessica Sharmin Rahman', 'BSc 18th', 'The Australian National University', 'Australia', 'PhD Student', 'BSc', 1),
+  ('Kazi Mazbah Uddin', 'BSc 18th', 'Samsung R&D Institute Bangladesh', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Md. Ashraful Islam', 'BSc 18th', 'East West University', 'Bangladesh', 'Lecturer', 'BSc', 1),
+  ('Md. Ataus Samad Biplob', 'BSc 18th', 'city university', 'Bangladesh', 'lecturer', 'BSc', 1),
+  ('Md. Khalid Rahman', 'BSc 18th', 'Samsung R&D Institute Bangladesh Ltd.', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Md. Riaz Uddin', 'BSc 18th', 'Dhaka International University', 'Bangladesh', 'Lecturer', 'BSc', 1),
+  ('Md. Ridwan Hossain Talukder', 'BSc 18th', 'null', 'null', 'null', 'BSc', 1),
+  ('Md. Rubel Talukder', 'BSc 18th', 'Sonali Polaris Financial Technology Limited', 'Bangladesh', 'Junior Consultant(Software Developer)', 'BSc', 1),
+  ('Mia Mohammed Imran', 'BSc 18th', 'AnyConnect Limited', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Mrityunjoy Saha Topu', 'BSc 18th', 'Agrani Bank Ltd.', 'Bangladesh', 'Senior Officer (ICT)', 'BSc', 1),
+  ('Rashedul Islam', 'BSc 18th', 'Ipvision Canada Inc.', 'Bangladesh', 'Jr. Software Engineer', 'BSc', 1),
+  ('S. M. Shaiful Alam', 'BSc 18th', 'Samsung R&D Institute Bangladesh Ltd.', 'Bangladesh', 'Senior Software Engineer', 'BSc', 1),
+  ('Saidur Rahman', 'BSc 18th', 'Montana State University', 'USA', 'Research Assistant', 'BSc', 1),
+  ('Sanad Saha', 'BSc 18th', 'Oregon State University', 'USA', 'Graduate Teaching Assistant', 'BSc', 1),
+  ('Syeda Fatema Mazumder', 'BSc 18th', 'University of North Carolina at Charlotte', 'USA', 'Research Assistant', 'BSc', 1),
+  ('Kazi Rashedul Islam', 'BSc 18th', 'Genuity Systems Ltd.', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Faria Noor', 'BSc 19th', 'Therap BD Ltd.', 'Bangladesh', 'Software Engineer, QA', 'BSc', 1),
+  ('M. Tahsin Anwar (Akif)', 'BSc 19th', 'Therap BD Limited', 'Bangladesh', 'Associate Software Engineer', 'BSc', 1),
+  ('Mahfujur Rahman Asif', 'BSc 19th', 'Monstar lab bangladesh', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Mazedul Islam Mazid', 'BSc 19th', 'Orbitax Bangladesh Ltd.', 'Bangladesh', 'Associate Software Engineer', 'BSc', 1),
+  ('Md Muidul Alam', 'BSc 19th', 'Enosis Solutions', 'Bangladesh', 'Software Engineer', 'BSc', 1)
+;
+
 -- Add as many records as needed, following the same format.
+
 
 
 
