@@ -233,6 +233,34 @@ VALUES
 ;
 
 -- Add as many records as needed, following the same format.
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('S. M. Shaiful Alam', 'BSc 18th', 'University of Texas at San Antonio', 'USA', 'Research Assistant', 'BSc', 1),
+  ('Saidur Rahman', 'BSc 18th', 'George Mason University', 'USA', 'Graduate Teaching Assistant', 'BSc', 1),
+  ('Sanad Saha', 'BSc 18th', 'National University of Singapore', 'Singapore', 'PhD Student', 'BSc', 1),
+  ('Syeda Fatema Mazumder', 'BSc 18th', 'Traveloka', 'Singapore', 'Software Engineer', 'BSc', 1),
+  ('Kazi Rashedul Islam', 'BSc 18th', 'Wipro Bangladesh Limited', 'Bangladesh', 'Senior Java EE Engineer', 'BSc', 1),
+  ('Faria Noor', 'BSc 19th', 'Georgia Institute of Technology', 'USA', 'Research Assistant', 'BSc', 1),
+  ('M. Tahsin Anwar (Akif)', 'BSc 19th', 'Infolytx Bangladesh Limited', 'Bangladesh', 'Senior Software Engineer', 'BSc', 1),
+  ('Mahfujur Rahman Asif', 'BSc 19th', 'Bangladesh Bank', 'Bangladesh', 'Assistant Maintenance Engineer (AD)', 'BSc', 1),
+  ('Mazedul Islam Mazid', 'BSc 19th', 'Eskimi', 'Bangladesh', 'Senior Scala Engineer', 'BSc', 1),
+  ('Md Muidul Alam', 'BSc 19th', 'BRAC Bank Ltd', 'Bangladesh', 'Associate Manager', 'BSc', 1),
+  ('Md Zahin Jawad', 'BSc 19th', 'Monstar Lab Bangladesh Ltd', 'Bangladesh', 'Senior Software Engineer', 'BSc', 1),
+  ('Md. Saiful Islam', 'BSc 19th', 'Therap', 'Software Bangladesh', 'Engineer', 'BSc', 1),
+  ('Mohammad Mazedul Islam Mazid', 'BSc 19th', 'East West University', 'Bangladesh', 'Lecturer', 'BSc', 1),
+  ('Mohammad Washeef Ibn Waliur', 'BSc 19th', 'Stony Brook University', 'USA', 'PhD Student', 'BSc', 1),
+  ('Muhammad Jawad Iqbal', 'BSc 19th', 'Dhaka International University', 'Bangladesh', 'Lecturer', 'BSc', 1),
+  ('Rakib Ahsan', 'BSc 19th', 'Bangladesh University of Business & Technology (BUBT)', 'Bangladesh', 'Lecturer', 'BSc', 1),
+  ('Tamim Addari', 'BSc 19th', 'Daffodil International University', 'Bangladesh', 'Lecturer', 'BSc', 1),
+  ('Apu Kumar Chakroborti', 'BSc 20th', 'University of South Alabama', 'USA', 'Research Assistant', 'BSc', 1),
+  ('Azizul Hakim', 'BSc 20th', 'IPvision Soft Ltd.', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Golam Azrin', 'BSc 20th', 'Eskimi', 'Bangladesh', 'Scala Engineer', 'BSc', 1),
+  ('Hosneara Ahmed', 'BSc 20th', 'University of Texas, Arlington', 'null', 'GTA', 'BSc', 1),
+  ('Md Tahsin Tausif', 'BSc 20th', 'Pathao Ltd.', 'null', 'Software Engineer', 'BSc', 1),
+  ('Md. Al- Zihad', 'BSc 20th', 'Sonali Polaris Financial Technology Limited', 'Bangladesh', 'Junior Consultant(R&D)', 'BSc', 1)
+;
+
+-- Add as many records as needed, following the same format.
 
 
 
