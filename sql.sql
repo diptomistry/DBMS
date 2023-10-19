@@ -288,8 +288,36 @@ VALUES
   ('Mazedul Islam Mazid', 'BSc 19th', 'Orbitax Bangladesh Ltd.', 'Bangladesh', 'Associate Software Engineer', 'BSc', 1),
   ('Md Muidul Alam', 'BSc 19th', 'Enosis Solutions', 'Bangladesh', 'Software Engineer', 'BSc', 1)
 ;
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Md Zahin Jawad', 'BSc 19th', 'Works Applications Singapore', 'Singapore', 'Software Engineer', 'BSc', 1),
+  ('Md. Saiful Islam', 'BSc 19th', 'Therap Services', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Mohammad Mazedul Islam Mazid', 'BSc 19th', 'Brikl', 'Bangladesh', 'Senior Software Engineer', 'BSc', 1),
+  ('Mohammad Washeef Ibn Waliur', 'BSc 19th', 'N/A', 'N/A', 'Bangladesh', 'N/A', 1),
+  ('Muhammad Jawad Iqbal', 'BSc 19th', 'iPay Systems Ltd.', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Rakib Ahsan', 'BSc 19th', 'Works Applications Singapore PTE LTD.', 'Singapore', 'Software Engineer', 'BSc', 1),
+  ('Tamim Addari', 'BSc 19th', 'DBS Bank', 'Singapore', 'Associate', 'BSc', 1),
+  ('Apu Kumar Chakroborti', 'BSc 20th', 'Sonali Polaris FT Limited', 'Bangladesh', 'Engineering Trainee', 'BSc', 1),
+  ('Azizul Hakim', 'BSc 20th', 'Analyzen Bangladesh Ltd.', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Golam Azrin', 'BSc 20th', 'DSI (Software Bangladesh)', 'Bangladesh', 'Developer', 'BSc', 1),
+  ('Hosneara Ahmed', 'BSc 20th', 'University of Memphis', 'USA', 'Graduate Research Assistant', 'BSc', 1),
+  ('Md Tahsin Tausif', 'BSc 20th', 'Virginia Tech', 'USA', 'PhD Student', 'BSc', 1),
+  ('Md. Al- Zihad', 'BSc 20th', 'Therap BD Ltd.', 'Bangladesh', 'Associate Software Engineer', 'BSc', 1),
+  ('Md. Jahid Hasan', 'BSc 20th', 'SonaliPolaris FT Limited', 'Bangladesh', 'Engineering Trainee', 'BSc', 1),
+  ('Md. Mahir Ashhab', 'BSc 20th', 'Eastern University', 'Bangladesh', 'Lecturer', 'BSc', 1),
+  ('Md. Muhaimin shah pahalovi', 'BSc 20th', 'Kona software lab', 'Bangladesh', 'Jr. Engineer (R&D)', 'BSc', 1),
+  ('Md. Rofiqul Islam', 'BSc 20th', 'TigeritBD Ltd', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Md. Shorifuzzaman', 'BSc 20th', 'Enosis Solutions', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Mehedi Hasan', 'BSc 20th', 'Analyzen Bangladesh Ltd.', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Mehedi Hasan Masum', 'BSc 20th', 'NewsCred Inc.', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Nafis Sazid', 'BSc 20th', 'WellDev Bangladesh Ltd', 'Bangladesh', 'Junior Software Engineer', 'BSc', 1),
+  ('Roza Tabassum Ratri', 'BSc 20th', 'Bit Mascot (Pvt.) Ltd.', 'Bangladesh', 'Assistant Project Manager', 'BSc', 1),
+  ('Shafayat Nabi Chowdhury', 'BSc 20th', 'AnyConnect LLC', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Swasti Sunder Das', 'BSc 20th', 'KONA Software Lab Limited', 'Bangladesh', 'Jr. Engineer', 'BSc', 1),
+  ('Tanvir Shahriar Rifat', 'BSc 20th', 'Therap (BD) Ltd', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Md. Saiful Islam', 'BSc 19th', 'University of Memphis', 'USA', 'Graduate Research Assistant', 'BSc', 1)
+;
 
--- Add as many records as needed, following the same format.
 
 
 
