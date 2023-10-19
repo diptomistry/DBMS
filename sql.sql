@@ -320,6 +320,30 @@ VALUES
 
 
 
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Tanzir Islam', 'BSc 20th', 'Stony Brook University', 'Bangladesh', 'PhD Student', 'BSc', 1),
+  ('Jyotirmay Nag Setu', 'BSc 21st', 'Robi Axiata Ltd.', 'Bangladesh', 'Data Engineer', 'BSc', 1),
+  ('Md Sadman Sakib', 'BSc 21st', 'Samsung R&D Institute, Bangladesh', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Md. Shahriar Hossain Sajib', 'BSc 21st', 'Samsung R&D Institute', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Nazmus Sakib', 'BSc 21st', 'Samsung R&D Institute Bangladesh', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Md. Samiul Islam Siddiqui', 'BSc 22nd', 'TigerIT Bangladesh Limited', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Yitoshee Rahman', 'BSc 17th', 'University of Louisiana at Lafayette', 'USA', 'GRA', 'BSc', 1),
+  ('Nazia Hasan', 'BSc 11th', 'Platform of Trust', 'Tampere', 'Head of Design', 'BSc', 1),
+  ('Rakib Ahsan', 'BSc 19th', 'Cargill', 'Singapore', 'Software Engineer', 'BSc', 1),
+  ('Lokesh Chandra Das', 'BSc 17th', 'University of Memphis', 'USA', 'PhD Student', 'BSc', 1),
+  ('Showkot Hossain', 'BSc 22nd', 'Dohatec New Media', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('Md Shiplu Hawlader', 'BSc 13th', 'Google', 'USA', 'Software Engineer', 'BSc', 1),
+  ('Md. Shafiqul Islam (Nafsan)', 'BSc 23rd', 'Enosis Solutions', 'Bangladesh', 'Software Engineer - Level 2', 'BSc', 1),
+  ('Kamal Parvez', 'BSc 22nd', 'TigerIT Bangladesh', 'Bangladesh', 'Software Engineer QA', 'BSc', 1),
+  ('Md Ashraf Uddin', 'BSc 11th', 'Jagannath University', 'Bangladesh', 'Associate Professor', 'BSc', 1),
+  ('Muhammed Tawfiqul Islam', 'BSc 13th', 'University of Melbourne', 'Australia', 'Associate Lecturer', 'BSc', 1),
+  ('Mahbuba Afrin', 'BSc 17th', 'Curtin University', 'Australia', 'Lecturer', 'BSc', 1),
+  ('MD. Rajeb Talukder', 'BSc 21st', 'CAMPFIRE, Inc.', 'Japan', 'Data Analyst', 'BSc', 1),
+  ('Md Reaj', 'BSc 23rd', 'Therap BD', 'Bangladesh', 'Software Engineer', 'BSc', 1),
+  ('SONIA NAZ', 'MS 5th', 'DataTech', 'Bangladesh', 'Managing Director & CEO', 'MS', 1),
+  ('K. M. Merajul Arefin', 'BSc 23rd', 'Samsung R&D Institute Bangladesh', 'Bangladesh', 'Software Engineer', 'BSc', 1)
+;
 
 
 
