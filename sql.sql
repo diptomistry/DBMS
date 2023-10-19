@@ -1,3 +1,4 @@
+use db2020615644;
 -- Create University Table
 CREATE TABLE universities (
     university_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -31,7 +32,7 @@ CREATE TABLE alumni (
 -- Create Overall Ranking Table
 CREATE TABLE overall_rankings (
     overall_ranking_id INT PRIMARY KEY AUTO_INCREMENT,
-    rank INT,
+    ranking INT,
     year YEAR,
     university_id INT,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
@@ -40,7 +41,7 @@ CREATE TABLE overall_rankings (
 -- Create Subject-wise Ranking Table
 CREATE TABLE subject_rankings (
     sub_ranking_id INT PRIMARY KEY AUTO_INCREMENT,
-    rank INT,
+    ranking INT,
     year YEAR,
     sub_id INT,
     FOREIGN KEY (sub_id) REFERENCES subjects(sub_id)
