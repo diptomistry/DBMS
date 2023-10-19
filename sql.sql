@@ -246,7 +246,7 @@ VALUES
   ('Tawkir Ahmed', 'BSc 16th', 'Eskimi', 'Bangladesh', 'Senior Scala Engineer', 'BSc', 1),
   ('A M A Erfan Bashar', 'BSc 17th', 'BRAC Bank Ltd', 'Bangladesh', 'Associate Manager', 'BSc', 1),
   ('Anjum Riashat', 'BSc 17th', 'Monstar Lab Bangladesh Ltd', 'Bangladesh', 'Senior Software Engineer', 'BSc', 1),
-  ('Julkar Nain', 'BSc 17th', 'Therap', 'Software', 'Bangladesh', 'Engineer', 'BSc', 1),
+  ('Julkar Nain', 'BSc 17th', 'Therap', 'Bangladesh', 'Software Engineer', 'BSc', 1),
   ('Mahamudul Hasan', 'BSc 17th', 'East West University', 'Bangladesh', 'Lecturer', 'BSc', 1),
   ('Masum Billal', 'BSc 17th', 'Auleek ltd', 'Bangladesh', 'Machine Learning Engineer', 'BSc', 1),
   ('Md Naimul Hoque', 'BSc 17th', 'Stony Brook University', 'USA', 'PhD Student', 'BSc', 1),
