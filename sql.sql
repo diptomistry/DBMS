@@ -345,5 +345,186 @@ VALUES
   ('K. M. Merajul Arefin', 'BSc 23rd', 'Samsung R&D Institute Bangladesh', 'Bangladesh', 'Software Engineer', 'BSc', 1)
 ;
 
+--sample data for university_id
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('John Doe', 'BSc 2020', 'Company A', 'USA', 'Software Engineer', 'BSc', 2),
+  ('Jane Smith', 'BSc 2019', 'Company B', 'Bangladesh', 'Data Analyst', 'BSc', 2),
+  ('Mike Johnson', 'BSc 2021', 'Company C', 'Canada', 'Product Manager', 'BSc', 2),
+  ('Emily Brown', 'BSc 2018', 'Company D', 'Finland', 'Software Developer', 'BSc', 2),
+  ('David Lee', 'BSc 2017', 'Company E', 'Singapore', 'QA Engineer', 'BSc', 2),
+  ('Sarah White', 'BSc 2016', 'Company F', 'USA', 'Project Manager', 'BSc', 2),
+  ('Robert Wilson', 'BSc 2022', 'Company G', 'Bangladesh', 'Business Analyst', 'BSc', 2),
+  ('Karen Hall', 'BSc 2015', 'Company H', 'Canada', 'Systems Analyst', 'BSc', 2),
+  ('William Miller', 'BSc 2014', 'Company I', 'Finland', 'Database Administrator', 'BSc', 2),
+  ('Linda Davis', 'BSc 2013', 'Company J', 'Singapore', 'Network Engineer', 'BSc', 2),
+  ('James Clark', 'BSc 2023', 'Company K', 'USA', 'IT Consultant', 'BSc', 2),
+  ('Patricia Lewis', 'BSc 2012', 'Company L', 'Bangladesh', 'Product Owner', 'BSc', 2),
+  ('Joseph Walker', 'BSc 2011', 'Company M', 'Canada', 'Data Scientist', 'BSc', 2),
+  ('Nancy Martin', 'BSc 2024', 'Company N', 'Finland', 'Web Developer', 'BSc', 2),
+  ('Daniel Hall', 'BSc 2010', 'Company O', 'Singapore', 'Project Coordinator', 'BSc', 2),
+  ('Jennifer Moore', 'BSc 2009', 'Company P', 'USA', 'UI/UX Designer', 'BSc', 2),
+  ('Charles Taylor', 'BSc 2025', 'Company Q', 'Bangladesh', 'Security Analyst', 'BSc', 2),
+  ('Elizabeth Anderson', 'BSc 2008', 'Company R', 'Canada', 'Cloud Engineer', 'BSc', 2),
+  ('Michael King', 'BSc 2007', 'Company S', 'Finland', 'DevOps Engineer', 'BSc', 2),
+  ('Maria Robinson', 'BSc 2026', 'Company T', 'Singapore', 'Network Administrator', 'BSc', 2),
+  ('Robert Harris', 'BSc 2006', 'Company U', 'USA', 'Software Architect', 'BSc', 2),
+  ('Jessica Scott', 'BSc 2005', 'Company V', 'Bangladesh', 'Data Engineer', 'BSc', 2),
+  ('John Miller', 'BSc 2027', 'Company W', 'Canada', 'IT Support Specialist', 'BSc', 2),
+  ('Laura Lee', 'BSc 2004', 'Company X', 'Finland', 'Front-End Developer', 'BSc', 2),
+  ('Richard Wright', 'BSc 2003', 'Company Y', 'Singapore', 'Database Developer', 'BSc', 2),
+  ('Susan Hall', 'BSc 2028', 'Company Z', 'USA', 'Software Tester', 'BSc', 2),
+  ('Thomas Davis', 'BSc 2002', 'Company AA', 'Bangladesh', 'QA Tester', 'BSc', 2),
+  ('Karen Taylor', 'BSc 2001', 'Company BB', 'Canada', 'IT Analyst', 'BSc', 2),
+  ('Daniel Scott', 'BSc 2029', 'Company CC', 'Finland', 'Systems Engineer', 'BSc', 2),
+  ('Megan Martin', 'BSc 2000', 'Company DD', 'Singapore', 'Business Analyst', 'BSc', 2),
+  ('Paul Smith', 'BSc 1999', 'Company EE', 'USA', 'Network Technician', 'BSc', 2),
+  ('Emily Wilson', 'BSc 2030', 'Company FF', 'Bangladesh', 'Web Developer', 'BSc', 2),
+  ('William Brown', 'BSc 1998', 'Company GG', 'Canada', 'Software Developer', 'BSc', 2),
+  ('Amanda Johnson', 'BSc 1997', 'Company HH', 'Finland', 'Project Manager', 'BSc', 2),
+  ('Edward Hall', 'BSc 2031', 'Company II', 'Singapore', 'Business Analyst', 'BSc', 2),
+  ('Sarah Moore', 'BSc 1996', 'Company JJ', 'USA', 'Data Scientist', 'BSc', 2),
+  ('Christopher Davis', 'BSc 1995', 'Company KK', 'Bangladesh', 'Web Developer', 'BSc', 2),
+  ('Jessica Scott', 'BSc 2032', 'Company LL', 'Canada', 'IT Consultant', 'BSc', 2),
+  ('Michael Miller', 'BSc 1994', 'Company MM', 'Finland', 'Product Owner', 'BSc', 2);
+
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Aiden Johnson', 'BSc 2020', 'Company A', 'USA', 'Software Engineer', 'BSc', 3),
+  ('Sophia Lee', 'BSc 2019', 'Company B', 'Bangladesh', 'Data Analyst', 'BSc', 3),
+  ('Liam Smith', 'BSc 2021', 'Company C', 'Canada', 'Product Manager', 'BSc', 3),
+  ('Olivia Martin', 'BSc 2018', 'Company D', 'Finland', 'Software Developer', 'BSc', 3),
+  ('Noah Brown', 'BSc 2017', 'Company E', 'Singapore', 'QA Engineer', 'BSc', 3),
+  ('Emma Davis', 'BSc 2016', 'Company F', 'USA', 'Project Manager', 'BSc', 3),
+  ('Oliver Wilson', 'BSc 2022', 'Company G', 'Bangladesh', 'Business Analyst', 'BSc', 3),
+  ('Ava Taylor', 'BSc 2015', 'Company H', 'Canada', 'Systems Analyst', 'BSc', 3),
+  ('Elijah Hall', 'BSc 2014', 'Company I', 'Finland', 'Database Administrator', 'BSc', 3),
+  ('Charlotte Lee', 'BSc 2013', 'Company J', 'Singapore', 'Network Engineer', 'BSc', 3),
+  ('Lucas Clark', 'BSc 2023', 'Company K', 'USA', 'IT Consultant', 'BSc', 3),
+  ('Grace Lewis', 'BSc 2012', 'Company L', 'Bangladesh', 'Product Owner', 'BSc', 3),
+  ('Mason Walker', 'BSc 2011', 'Company M', 'Canada', 'Data Scientist', 'BSc', 3),
+  ('Amelia Moore', 'BSc 2024', 'Company N', 'Finland', 'Web Developer', 'BSc', 3),
+  ('Henry Hall', 'BSc 2010', 'Company O', 'Singapore', 'Project Coordinator', 'BSc', 3),
+  ('Scarlett Moore', 'BSc 2009', 'Company P', 'USA', 'UI/UX Designer', 'BSc', 3),
+  ('Jackson Harris', 'BSc 2025', 'Company Q', 'Bangladesh', 'Security Analyst', 'BSc', 3),
+  ('Sophie Anderson', 'BSc 2008', 'Company R', 'Canada', 'Cloud Engineer', 'BSc', 3),
+  ('Ethan King', 'BSc 2007', 'Company S', 'Finland', 'DevOps Engineer', 'BSc', 3),
+  ('Abigail Robinson', 'BSc 2026', 'Company T', 'Singapore', 'Network Administrator', 'BSc', 3),
+  ('Daniel Taylor', 'BSc 2006', 'Company U', 'USA', 'Software Architect', 'BSc', 3),
+  ('Avery Scott', 'BSc 2005', 'Company V', 'Bangladesh', 'Data Engineer', 'BSc', 3),
+  ('Madison Miller', 'BSc 2027', 'Company W', 'Canada', 'IT Support Specialist', 'BSc', 3),
+  ('David Wilson', 'BSc 2004', 'Company X', 'Finland', 'Front-End Developer', 'BSc', 3),
+  ('Sofia Wright', 'BSc 2003', 'Company Y', 'Singapore', 'Database Developer', 'BSc', 3),
+  ('Joseph Hall', 'BSc 2028', 'Company Z', 'USA', 'Software Tester', 'BSc', 3),
+  ('Victoria Davis', 'BSc 2002', 'Company AA', 'Bangladesh', 'QA Tester', 'BSc', 3),
+  ('Henry Taylor', 'BSc 2001', 'Company BB', 'Canada', 'IT Analyst', 'BSc', 3),
+  ('Grace Scott', 'BSc 2029', 'Company CC', 'Finland', 'Systems Engineer', 'BSc', 3),
+  ('William Martin', 'BSc 2000', 'Company DD', 'Singapore', 'Business Analyst', 'BSc', 3),
+  ('Michael Smith', 'BSc 1999', 'Company EE', 'USA', 'Network Technician', 'BSc', 3),
+  ('Abigail Wilson', 'BSc 2030', 'Company FF', 'Bangladesh', 'Web Developer', 'BSc', 3),
+  ('Alexander Brown', 'BSc 1998', 'Company GG', 'Canada', 'Software Developer', 'BSc', 3),
+  ('Madison Johnson', 'BSc 1997', 'Company HH', 'Finland', 'Project Manager', 'BSc', 3),
+  ('James Davis', 'BSc 2031', 'Company II', 'Singapore', 'Business Analyst', 'BSc', 3),
+  ('Ella Moore', 'BSc 1996', 'Company JJ', 'USA', 'Data Scientist', 'BSc', 3),
+  ('Henry Clark', 'BSc 1995', 'Company KK', 'Bangladesh', 'Web Developer', 'BSc', 3),
+  ('Evelyn Scott', 'BSc 2032', 'Company LL', 'Canada', 'IT Consultant', 'BSc', 3),
+  ('Michael Miller', 'BSc 1994', 'Company MM', 'Finland', 'Product Owner', 'BSc', 3);
 
 
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Liam Parker', 'BSc 2019', 'Company A', 'USA', 'Software Engineer', 'BSc', 4),
+  ('Emma Turner', 'BSc 2018', 'Company B', 'Bangladesh', 'Data Analyst', 'BSc', 4),
+  ('Oliver Brooks', 'BSc 2020', 'Company C', 'Canada', 'Product Manager', 'BSc', 4),
+  ('Olivia King', 'BSc 2017', 'Company D', 'Finland', 'Software Developer', 'BSc', 4),
+  ('Lucas Harris', 'BSc 2016', 'Company E', 'Singapore', 'QA Engineer', 'BSc', 4),
+  ('Ava Lewis', 'BSc 2021', 'Company F', 'USA', 'Project Manager', 'BSc', 4),
+  ('Noah Foster', 'BSc 2015', 'Company G', 'Bangladesh', 'Business Analyst', 'BSc', 4),
+  ('Sophia Wright', 'BSc 2014', 'Company H', 'Canada', 'Systems Analyst', 'BSc', 4),
+  ('Jackson Robinson', 'BSc 2022', 'Company I', 'Finland', 'Database Administrator', 'BSc', 4),
+  ('Amelia Scott', 'BSc 2013', 'Company J', 'Singapore', 'Network Engineer', 'BSc', 4),
+  ('Mason Davis', 'BSc 2023', 'Company K', 'USA', 'IT Consultant', 'BSc', 4),
+  ('Oliver Adams', 'BSc 2012', 'Company L', 'Bangladesh', 'Product Owner', 'BSc', 4),
+  ('Charlotte Young', 'BSc 2024', 'Company M', 'Canada', 'Data Scientist', 'BSc', 4),
+  ('Elijah Clark', 'BSc 2011', 'Company N', 'Finland', 'Web Developer', 'BSc', 4),
+  ('Grace Hall', 'BSc 2025', 'Company O', 'Singapore', 'Project Coordinator', 'BSc', 4),
+  ('Henry Turner', 'BSc 2010', 'Company P', 'USA', 'UI/UX Designer', 'BSc', 4),
+  ('Sophia Parker', 'BSc 2026', 'Company Q', 'Bangladesh', 'Security Analyst', 'BSc', 4),
+  ('Ethan Harris', 'BSc 2009', 'Company R', 'Canada', 'Cloud Engineer', 'BSc', 4),
+  ('Olivia Lewis', 'BSc 2027', 'Company S', 'Finland', 'DevOps Engineer', 'BSc', 4),
+  ('Ella King', 'BSc 2008', 'Company T', 'Singapore', 'Network Administrator', 'BSc', 4),
+  ('Mason Wright', 'BSc 2028', 'Company U', 'USA', 'Software Architect', 'BSc', 4),
+  ('Sofia Martin', 'BSc 2007', 'Company V', 'Bangladesh', 'Data Engineer', 'BSc', 4),
+  ('Noah Walker', 'BSc 2029', 'Company W', 'Canada', 'IT Support Specialist', 'BSc', 4),
+  ('Oliver Adams', 'BSc 2006', 'Company X', 'Finland', 'Front-End Developer', 'BSc', 4),
+  ('Avery King', 'BSc 2030', 'Company Y', 'Singapore', 'Database Developer', 'BSc', 4),
+  ('Sophia Scott', 'BSc 2005', 'Company Z', 'USA', 'Software Tester', 'BSc', 4),
+  ('Henry Foster', 'BSc 2031', 'Company AA', 'Bangladesh', 'QA Tester', 'BSc', 4),
+  ('Ava Turner', 'BSc 2004', 'Company BB', 'Canada', 'IT Analyst', 'BSc', 4),
+  ('Elijah Harris', 'BSc 2032', 'Company CC', 'Finland', 'Systems Engineer', 'BSc', 4),
+  ('Sophia Moore', 'BSc 2003', 'Company DD', 'Singapore', 'Business Analyst', 'BSc', 4),
+  ('Mason Wright', 'BSc 2033', 'Company EE', 'USA', 'Network Technician', 'BSc', 4),
+  ('Olivia Robinson', 'BSc 2002', 'Company FF', 'Bangladesh', 'Web Developer', 'BSc', 4),
+  ('Henry Turner', 'BSc 2034', 'Company GG', 'Canada', 'Software Developer', 'BSc', 4),
+  ('Charlotte Walker', 'BSc 2001', 'Company HH', 'Finland', 'Project Manager', 'BSc', 4),
+  ('Avery King', 'BSc 2035', 'Company II', 'Singapore', 'Business Analyst', 'BSc', 4),
+  ('Ella Clark', 'BSc 2000', 'Company JJ', 'USA', 'Data Scientist', 'BSc', 4),
+  ('Noah Foster', 'BSc 2036', 'Company KK', 'Bangladesh', 'Web Developer', 'BSc', 4),
+  ('Emma Lewis', 'BSc 1999', 'Company LL', 'Canada', 'IT Consultant', 'BSc', 4),
+  ('Sofia Turner', 'BSc 2037', 'Company MM', 'Finland', 'Product Owner', 'BSc', 4),
+  ('Henry Parker', 'BSc 1998', 'Company NN', 'Singapore', 'QA Engineer', 'BSc', 4),
+  ('Ava Wright', 'BSc 2038', 'Company OO', 'USA', 'Project Manager', 'BSc', 4),
+  ('Oliver Young', 'BSc 1997', 'Company PP', 'Bangladesh', 'Business Analyst', 'BSc', 4),
+  ('Sophia Davis', 'BSc 2039', 'Company QQ', 'Canada', 'Systems Analyst', 'BSc', 4),
+  ('Mason Turner', 'BSc 1996', 'Company RR', 'Finland', 'Database Administrator', 'BSc', 4),
+  ('Ella King', 'BSc 2040', 'Company SS', 'Singapore', 'Network Engineer', 'BSc', 4),
+  ('Avery Scott', 'BSc 1995', 'Company TT', 'USA', 'IT Consultant', 'BSc', 4),
+  ('Lucas Hall', 'BSc 2041', 'Company UU', 'Bangladesh', 'Product Owner', 'BSc', 4),
+  ('Olivia Harris', 'BSc 1994', 'Company VV', 'Canada', 'Data Scientist', 'BSc', 4),
+  ('Sofia Foster', 'BSc 2042', 'Company WW', 'Finland', 'Web Developer', 'BSc', 4),
+  ('Henry Lewis', 'BSc 1993', 'Company XX', 'Singapore', 'Project Coordinator', 'BSc', 4),
+  ('Noah Wright', 'BSc 2043', 'Company YY', 'USA', 'UI/UX Designer', 'BSc', 4),
+  ('Ella Foster', 'BSc 1992', 'Company ZZ', 'Bangladesh', 'Security Analyst', 'BSc', 4);
+
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('John Smith', 'BSc 2019', 'Company X', 'USA', 'Software Engineer', 'BSc', 5),
+  ('Emily Johnson', 'BSc 2018', 'Company Y', 'Bangladesh', 'Data Analyst', 'BSc', 5),
+  -- Add more records as needed
+  ('Michael Brown', 'BSc 2020', 'Company Z', 'Canada', 'Product Manager', 'BSc', 5);
+  -- Add more records as needed
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Sophia Davis', 'BSc 2019', 'Company A', 'USA', 'Software Engineer', 'BSc', 6),
+  ('Liam Martin', 'BSc 2018', 'Company B', 'Bangladesh', 'Data Analyst', 'BSc', 6),
+  -- Add more records as needed
+  ('Ava Thompson', 'BSc 2020', 'Company C', 'Canada', 'Product Manager', 'BSc', 6);
+  -- Add more records as needed
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Ethan White', 'BSc 2019', 'Company X', 'USA', 'Software Engineer', 'BSc', 7),
+  ('Olivia Harris', 'BSc 2018', 'Company Y', 'Bangladesh', 'Data Analyst', 'BSc', 7),
+  -- Add more records as needed
+  ('Lucas Davis', 'BSc 2020', 'Company Z', 'Canada', 'Product Manager', 'BSc', 7);
+  -- Add more records as needed
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Ava Wilson', 'BSc 2019', 'Company A', 'USA', 'Software Engineer', 'BSc', 8),
+  ('Sophia Moore', 'BSc 2018', 'Company B', 'Bangladesh', 'Data Analyst', 'BSc', 8),
+  -- Add more records as needed
+  ('Ethan Taylor', 'BSc 2020', 'Company C', 'Canada', 'Product Manager', 'BSc', 8);
+  -- Add more records as needed
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Lucas Anderson', 'BSc 2019', 'Company X', 'USA', 'Software Engineer', 'BSc', 9),
+  ('Ava Smith', 'BSc 2018', 'Company Y', 'Bangladesh', 'Data Analyst', 'BSc', 9),
+  -- Add more records as needed
+  ('Emily Harris', 'BSc 2020', 'Company Z', 'Canada', 'Product Manager', 'BSc', 9);
+  -- Add more records as needed
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`, `location`, `Current Designation`, degree_earned, university_id)
+VALUES
+  ('Michael White', 'BSc 2019', 'Company A', 'USA', 'Software Engineer', 'BSc', 10),
+  ('Liam Davis', 'BSc 2018', 'Company B', 'Bangladesh', 'Data Analyst', 'BSc', 10),
+  -- Add more records as needed
+  ('Sophia Thompson', 'BSc 2020', 'Company C', 'Canada', 'Product Manager', 'BSc', 10);
+  -- Add more records as needed
