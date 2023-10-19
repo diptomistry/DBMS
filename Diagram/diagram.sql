@@ -1,113 +1,77 @@
-Table universities {
-  university_id INT [primary key]
-  name VARCHAR(100)
-  location VARCHAR(100)
-  founded_year YEAR
-  website VARCHAR(100)
+
+TABLE universities {
+    university_id INT [primary key]
+    university_name VARCHAR(255)
+    founded_date DATE
+    location VARCHAR(255)
+    website VARCHAR(255)
+    ranking INT
 }
 
-Table programs {
-  program_id INT [primary key]
-  university_id INT [ref: > universities.university_id]
-  name VARCHAR(100)
-  degree_level VARCHAR(50)
-  department VARCHAR(100)
-  description TEXT
+TABLE subjects {
+    sub_id INT [primary key]
+    sub_name VARCHAR(255)
+    university_id INT [ref: > universities.university_id]
 }
 
-Table students {
-  student_id INT [primary key]
-  first_name VARCHAR(50)
-  last_name VARCHAR(50)
-  birthdate DATE
-  email VARCHAR(100)
-  enrollment_year YEAR
-  graduation_year YEAR
+
+TABLE alumni {
+    alumni_id INT [primary key]
+    full_name VARCHAR(255)
+    graduation_year YEAR
+    degree_earned VARCHAR(255)
+    employer VARCHAR(255)
+    location VARCHAR(255)
+    university_id INT [ref: > universities.university_id]
 }
 
-Table courses {
-  course_id INT [primary key]
-  program_id INT [ref: > programs.program_id]
-  name VARCHAR(100)
-  code VARCHAR(20)
-  instructor VARCHAR(100)
-  credits INT
+
+TABLE overall_rankings {
+    overall_ranking_id INT [primary key]
+    rank INT
+    year YEAR
+    university_id INT [ref: > universities.university_id]
 }
 
-Table enrollments {
-  enrollment_id INT [primary key]
-  student_id INT [ref: > students.student_id]
-  course_id INT [ref: > courses.course_id]
-  enrollment_date DATE
-  grade VARCHAR(5)
+
+TABLE subject_rankings {
+    sub_ranking_id INT [primary key]
+    rank INT
+    year YEAR
+    sub_id INT [ref: > subjects.sub_id]
 }
 
-Table achievements {
-  achievement_id INT [primary key]
-  student_id INT [ref: > students.student_id]
-  title VARCHAR(100)
-  description TEXT
-  date_achieved DATE
+
+TABLE professors {
+    professor_id INT [primary key]
+    full_name VARCHAR(255)
+    sub_id INT [ref: > subjects.sub_id]
 }
 
-Table alumni {
-  alumni_id INT [primary key]
-  student_id INT [ref: > students.student_id]
-  job_title VARCHAR(100)
-  company VARCHAR(100)
-  employment_start_date DATE
-  employment_end_date DATE
+
+TABLE facilities {
+    facility_id INT [primary key]
+    facility_name VARCHAR(255)
+    location VARCHAR(255)
+    university_id INT [ref: > universities.university_id]
 }
 
-Table faculty {
-  faculty_id INT [primary key]
-  university_id INT [ref: > universities.university_id]
-  first_name VARCHAR(50)
-  last_name VARCHAR(50)
-  department VARCHAR(100)
-  email VARCHAR(100)
-  hire_date DATE
+TABLE awards {
+    award_id INT [primary key]
+    award_name VARCHAR(255)
+    year YEAR
+    recipient_id INT [ref: > professors.professor_id]
+    //recipient_id INT [ref: > alumni.alumni_id]
+                    
+    
 }
 
-Table research_projects {
-  project_id INT [primary key]
-  faculty_id INT [ref: > faculty.faculty_id]
-  title VARCHAR(100)
-  description TEXT
-  start_date DATE
-  end_date DATE
-}
 
-Table publications {
-  publication_id INT [primary key]
-  faculty_id INT [ref: > faculty.faculty_id]
-  title VARCHAR(200)
-  co_authors TEXT
-  publication_date DATE
-}
 
-Table events {
-  event_id INT [primary key]
-  event_name VARCHAR(100)
-  event_date DATE
-  location VARCHAR(100)
-  description TEXT
-}
-
-Table student_events {
-  student_id INT [ref: > students.student_id]
-  event_id INT [ref: > events.event_id]
-}
-
-Table faculty_events {
-  faculty_id INT [ref: > faculty.faculty_id]
-  event_id INT [ref: > events.event_id]
-}
-
-Table university_metrics {
-  metric_id INT [primary key]
-  university_id INT [ref: > universities.university_id]
-  metric_name VARCHAR(100)
-  value FLOAT
-  year YEAR
+TABLE university_metrics {
+    metric_id INT [primary key]
+    university_id INT [ref: > universities.university_id]
+    metric_name VARCHAR(100)
+    value FLOAT
+    year YEAR
 }
