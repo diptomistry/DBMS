@@ -72,6 +72,8 @@ CREATE TABLE awards (
     recipient_id INT,
     FOREIGN KEY (recipient_id) REFERENCES professors(professor_id) ON DELETE CASCADE,
     FOREIGN KEY (recipient_id) REFERENCES alumni(alumni_id) ON DELETE CASCADE
+    --if a row in the "professors" table is deleted, any corresponding rows in the "awards" table with the same "recipient_id" value will also be deleted automatically.
+    --if a row in the "alumni" table is deleted, any corresponding rows in the "awards" table with the same "recipient_id" value will be deleted.
 );
 
 -- Create Financial Data Table
