@@ -72,8 +72,6 @@ CREATE TABLE awards (
     recipient_id INT,
     FOREIGN KEY (recipient_id) REFERENCES professors(professor_id) ON DELETE CASCADE,
     FOREIGN KEY (recipient_id) REFERENCES alumni(alumni_id) ON DELETE CASCADE
-    --if a row in the "professors" table is deleted, any corresponding rows in the "awards" table with the same "recipient_id" value will also be deleted automatically.
-    --if a row in the "alumni" table is deleted, any corresponding rows in the "awards" table with the same "recipient_id" value will be deleted.
 );
 
 -- Create Financial Data Table
@@ -84,4 +82,48 @@ CREATE TABLE university_metrics (
     value FLOAT,
     year YEAR,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
-);
+) AUTO_INCREMENT = 1; -- Set the starting value to 1
+
+
+-- Insert data into University Table (corrected data)
+INSERT INTO universities (university_name, founded_date, location, website, ranking)
+VALUES
+    ('Dhaka University', '1921-07-01', 'Dhaka', 'http://www.du.ac.bd', 1),
+    ('Bangladesh University of Engineering and Technology', '1962-02-25', 'Dhaka', 'http://www.buet.ac.bd', 2),
+    ('University of Chittagong', '1966-11-18', 'Chittagong', 'http://www.cu.ac.bd', 3),
+    ('Rajshahi University', '1953-07-06', 'Rajshahi', 'http://www.ru.ac.bd', 4),
+    ('Jahangirnagar University', '1970-01-12', 'Savar', 'http://www.juniv.edu', 5),
+    ('Khulna University', '1991-09-30', 'Khulna', 'http://www.ku.ac.bd', 6),
+    ('Shahjalal University of Science and Technology', '1987-11-01', 'Sylhet', 'http://www.sust.edu', 7),
+    ('Chittagong University of Engineering and Technology', '2003-10-17', 'Chittagong', 'http://www.cuet.ac.bd', 8),
+    ('Bangabandhu Sheikh Mujibur Rahman Science and Technology University', '1991-07-01', 'Gopalganj', 'http://www.bsmrstu.edu.bd', 9),
+    ('Bangladesh Agricultural University', '1961-09-03', 'Mymensingh', 'http://www.bau.edu.bd', 10);
+
+
+
+-- Insert data into Subject Table (for sample subjects)
+INSERT INTO subjects (sub_name, university_id)
+VALUES
+    ('Computer Science', 2),
+    ('Mechanical Engineering', 2),
+    ('Economics', 1),
+    ('Physics', 5);
+    
+-- Insert data into Subject Table (for sample subjects)
+INSERT INTO subjects (sub_name, university_id)
+VALUES
+    ('Chemistry', 3),
+    ('Biology', 3),
+    ('Civil Engineering', 2),
+    ('Electrical Engineering', 2),
+    ('History', 1),
+    ('Mathematics', 6),
+    ('Environmental Science', 4),
+    ('Psychology', 7);
+
+
+
+
+
+
+
