@@ -52,7 +52,9 @@ CREATE TABLE subject_rankings (
     sub_ranking_id INT PRIMARY KEY AUTO_INCREMENT,
     ranking INT,
     year YEAR,
+    university_id INT,
     sub_id INT,
+    FOREIGN KEY (university_id) REFERENCES universities(university_id),
     FOREIGN KEY (sub_id) REFERENCES subjects(sub_id)
 );
 
