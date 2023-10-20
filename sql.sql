@@ -6,7 +6,7 @@ CREATE TABLE universities (
     founded_date DATE,
     location VARCHAR(255),
     website VARCHAR(255),
-    ranking INT
+    ranking_2023 INT
 );
 
 -- Create Subject Table
