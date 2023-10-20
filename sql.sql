@@ -45,14 +45,7 @@ ALTER TABLE Alumni
 ADD COLUMN `Current Designation` VARCHAR(255);
 
 
--- Create Overall Ranking Table
-CREATE TABLE overall_rankings (
-    overall_ranking_id INT PRIMARY KEY AUTO_INCREMENT,
-    ranking INT,
-    year YEAR,
-    university_id INT,
-    FOREIGN KEY (university_id) REFERENCES universities(university_id)
-);
+
 
 -- Create Subject-wise Ranking Table
 CREATE TABLE subject_rankings (
