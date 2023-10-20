@@ -50,7 +50,7 @@ ADD COLUMN `Current Designation` VARCHAR(255);
 -- Create Subject-wise Ranking Table
 CREATE TABLE subject_rankings (
     sub_ranking_id INT PRIMARY KEY AUTO_INCREMENT,
-    ranking INT,
+    ranking VARCHAR(20),
     year YEAR,
     university_id INT,
     sub_id INT,
