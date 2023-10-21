@@ -817,7 +817,24 @@ SET website = CASE university_id
 END;
 
 
-
+UPDATE universities
+SET QSWorldRanking_2023 = CASE university_name
+    WHEN 'University of Dhaka' THEN '691-700'
+    WHEN 'Bangladesh University of Engineering and Technology' THEN '801-850'
+    WHEN 'North South University' THEN '851-900'
+    WHEN 'BRAC University' THEN '1001-1200'
+    WHEN 'Chittagong University of Engineering and Technology' THEN '1201-1400'
+    WHEN 'Daffodil International University' THEN '1201-1400'
+    WHEN 'East West University' THEN '1201-1400'
+    WHEN 'Jahangirnagar University' THEN '1201-1400'
+    WHEN 'Khulna University of Engineering and Technology' THEN '1201-1400'
+    WHEN 'United International University' THEN '1201-1400'
+    WHEN 'International University of Business, Agriculture and Technology (IUBAT)' THEN '1401+'
+    WHEN 'Khulna University' THEN '1401+'
+    WHEN 'Rajshahi University' THEN '1401+'
+    WHEN 'Shahjalal University of Science and Technology' THEN '1401+'
+    WHEN 'Stamford University Bangladesh' THEN '1401+'
+END;
 -- Insert data into Subject Table (for sample subjects)
 INSERT INTO subjects (sub_name, university_id)
 VALUES
