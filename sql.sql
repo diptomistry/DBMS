@@ -530,6 +530,147 @@ SET founded_date = CASE university_id
     WHEN 148 THEN '2016-12-15' -- Exim Bank Agricultural University of Bangladesh
 END;
 
+UPDATE universities
+SET type = CASE university_id
+    WHEN 1 THEN 'Public' -- University of Dhaka
+    WHEN 2 THEN 'Public' -- Bangladesh University of Engineering and Technology
+    WHEN 3 THEN 'Public' -- University of Chittagong
+    WHEN 4 THEN 'Public' -- Rajshahi University
+    WHEN 5 THEN 'Public' -- Jahangirnagar University
+    WHEN 6 THEN 'Public' -- Khulna University
+    WHEN 7 THEN 'Public' -- Shahjalal University of Science and Technology
+    WHEN 8 THEN 'Public' -- Chittagong University of Engineering and Technology
+    WHEN 9 THEN 'Public' -- Bangabandhu Sheikh Mujibur Rahman Science and Technology University
+    WHEN 10 THEN 'Public' -- Bangladesh Agricultural University
+    WHEN 12 THEN 'Private' -- BRAC University
+    WHEN 15 THEN 'Public' -- National University, Bangladesh
+    WHEN 16 THEN 'Private' -- North South University
+    WHEN 17 THEN 'Private' -- Daffodil International University
+    WHEN 18 THEN 'Private' -- American International University-Bangladesh
+    WHEN 21 THEN 'Private' -- Independent University, Bangladesh
+    WHEN 22 THEN 'Private' -- Ahsanullah University of Science and Technology
+    WHEN 24 THEN 'Private' -- East West University
+    WHEN 26 THEN 'Private' -- United International University
+    WHEN 27 THEN 'Private' -- Asian University for Women
+    WHEN 28 THEN 'Public' -- Islamic University of Technology
+    WHEN 29 THEN 'Private' -- International Islamic University, Chittagong
+    WHEN 30 THEN 'Public' -- Bangabandhu Sheikh Mujib Medical University
+    WHEN 31 THEN 'Public' -- Khulna University of Engineering and Technology
+    WHEN 32 THEN 'Public' -- Bangladesh University of Professionals
+    WHEN 33 THEN 'Private' -- Stamford University Bangladesh
+    WHEN 34 THEN 'Private' -- University of Liberal Arts Bangladesh
+    WHEN 36 THEN 'Private' -- University of Asia Pacific
+    WHEN 37 THEN 'Private' -- International University of Business Agriculture and Technology
+    WHEN 38 THEN 'Private' -- Southeast University, Bangladesh
+    WHEN 39 THEN 'Public' -- Jagannath University
+    WHEN 40 THEN 'Public' -- Bangladesh University of Textiles
+    WHEN 41 THEN 'Public' -- Islamic University
+    WHEN 42 THEN 'Public' -- Bangabandhu Sheikh Mujibur Rahman Agricultural University
+    WHEN 44 THEN 'Public' -- University of Barisal
+    WHEN 45 THEN 'Private' -- Bangladesh University of Business and Technology
+    WHEN 46 THEN 'Public' -- Chittagong Veterinary and Animal Sciences University
+    WHEN 47 THEN 'Public' -- Rajshahi University of Engineering and Technology
+    WHEN 48 THEN 'Public' -- Noakhali Science and Technology University
+    WHEN 49 THEN 'Public' -- Dhaka University of Engineering and Technology
+    WHEN 51 THEN 'Private' -- Green University of Bangladesh
+    WHEN 52 THEN 'Private' -- Canadian University of Bangladesh
+    WHEN 53 THEN 'Public' -- Jashore University of Science and Technology
+    WHEN 54 THEN 'Private' -- ASA University Bangladesh
+    WHEN 55 THEN 'Public' -- Sher-e-Bangla Agricultural University
+    WHEN 56 THEN 'Public' -- Hajee Mohammad Danesh Science and Technology University
+    WHEN 57 THEN 'Private' -- Primeasia University
+    WHEN 58 THEN 'Public' -- Sylhet Agricultural University
+    WHEN 59 THEN 'Private' -- Dhaka International University
+    WHEN 60 THEN 'Public' -- Patuakhali Science and Technology University
+    WHEN 61 THEN 'Private' -- BGMEA University of Fashion and Technology
+    WHEN 62 THEN 'Public' -- Mawlana Bhashani Science and Technology University
+    WHEN 63 THEN 'Public' -- Comilla University
+    WHEN 64 THEN 'Private' -- University of Science and Technology Chittagong
+    WHEN 65 THEN 'Private' -- Sonargaon University
+    WHEN 66 THEN 'Private' -- Metropolitan University
+    WHEN 67 THEN 'Private' -- State University of Bangladesh
+    WHEN 68 THEN 'Private' -- Northern University of Bangladesh
+    WHEN 69 THEN 'Private' -- Eastern University, Bangladesh
+    WHEN 70 THEN 'Private' -- World University of Bangladesh
+    WHEN 71 THEN 'Private' -- Manarat International University
+    WHEN 72 THEN 'Public' -- Begum Rokeya University, Rangpur
+    WHEN 73 THEN 'Private' -- University of Information Technology and Sciences
+    WHEN 74 THEN 'Private' -- Asian University of Bangladesh
+    WHEN 75 THEN 'Private' -- Leading University
+    WHEN 76 THEN 'Public' -- Bangabandhu Sheikh Mujibur Rahman Maritime University
+    WHEN 77 THEN 'Public' -- Jatiya Kabi Kazi Nazrul Islam University
+    WHEN 78 THEN 'Private' -- Notre Dame University Bangladesh
+    WHEN 79 THEN 'Private' -- Shanto Mariam University of Creative Technology
+    WHEN 80 THEN 'Private' -- East Delta University
+    WHEN 81 THEN 'Private' -- Gono Bishwabidyalay
+    WHEN 82 THEN 'Public' -- Islamic Arabic University
+    WHEN 83 THEN 'Private' -- Presidency University, Bangladesh
+    WHEN 84 THEN 'Public' -- Pabna Science and Technology University
+    WHEN 85 THEN 'Private' -- Prime University
+    WHEN 86 THEN 'Private' -- City University
+    WHEN 87 THEN 'Private' -- First Capital University of Bangladesh
+    WHEN 88 THEN 'Private' -- University of Development Alternative
+    WHEN 89 THEN 'Public' -- University of Global Village
+    WHEN 90 THEN 'Public' -- Sheikh Fazilatunnesa Mujib University
+    WHEN 91 THEN 'Private' -- Bangladesh University
+    WHEN 92 THEN 'Private' -- Atish Dipankar University of Science and Technology
+    WHEN 93 THEN 'Private' -- Uttara University
+    WHEN 94 THEN 'Private' -- University of South Asia, Bangladesh
+    WHEN 95 THEN 'Private' -- Chittagong Independent University
+    WHEN 96 THEN 'Private' -- Chittagong Medical University
+    WHEN 97 THEN 'Private' -- Royal University of Dhaka
+    WHEN 98 THEN 'Private' -- Premier University
+    WHEN 99 THEN 'Private' -- Port City International University
+    WHEN 100 THEN 'Private' -- Varendra University
+    WHEN 101 THEN 'Private' -- Southern University Bangladesh
+    WHEN 102 THEN 'Private' -- European University of Bangladesh
+    WHEN 103 THEN 'Private' -- Sylhet International University
+    WHEN 104 THEN 'Private' -- Queens University
+    WHEN 105 THEN 'Private' -- IBAIS University
+    WHEN 106 THEN 'Private' -- ZNRF University of Management Sciences
+    WHEN 107 THEN 'Public' -- Sheikh Hasina University
+    WHEN 108 THEN 'Private' -- North East University Bangladesh
+    WHEN 109 THEN 'Private' -- Fareast International University
+    WHEN 110 THEN 'Private' -- The Millenium University
+    WHEN 111 THEN 'Private' -- The Peoples University of Bangladesh
+    WHEN 112 THEN 'Private' -- Victoria University of Bangladesh
+    WHEN 113 THEN 'Private' -- Begum Gulchemonara Trust University
+    WHEN 114 THEN 'Public' -- Rangamati Science and Technology University
+    WHEN 115 THEN 'Private' -- The International University of Scholars
+    WHEN 116 THEN 'Public' -- Bangamata Sheikh Fojilatunnesa Mujib Science and Technology University
+    WHEN 117 THEN 'Private' -- University of Creative Technology Chittagong
+    WHEN 118 THEN 'Public' -- Rabindra University, Bangladesh
+    WHEN 119 THEN 'Private' -- Anwer Khan Modern University
+    WHEN 120 THEN 'Public' -- Rajshahi Science and Technology University
+    WHEN 121 THEN 'Private' -- North Western University
+    WHEN 122 THEN 'Private' -- Bangladesh Islami University
+    WHEN 123 THEN 'Public' -- Rajshahi Medical University
+    WHEN 124 THEN 'Private' -- Hamdard University of Bangladesh
+    WHEN 125 THEN 'Private' -- German University Bangladesh
+    WHEN 126 THEN 'Private' -- Northern University of Business and Technology, Khulna
+    WHEN 127 THEN 'Private' -- Central Womens University
+    WHEN 128 THEN 'Private' -- N.P.I. University of Bangladesh
+    WHEN 129 THEN 'Public' -- Feni University
+    WHEN 130 THEN 'Public' -- Rabindra Maitree University
+    WHEN 131 THEN 'Public' -- Ranada Prasad Shaha University
+    WHEN 132 THEN 'Private' -- Ishakha International University, Bangladesh
+    WHEN 133 THEN 'Public' -- Khulna Agricultural University
+    WHEN 134 THEN 'Public' -- North Bengal International University
+    WHEN 135 THEN 'Public' -- Pundra University of Science and Technology
+    WHEN 136 THEN 'Private' -- Bangladesh University of Health Sciences
+    WHEN 137 THEN 'Private' -- Khwaja Yunus Ali University
+    WHEN 138 THEN 'Private' -- International Standard University
+    WHEN 139 THEN 'Public' -- Bandarban University
+    WHEN 140 THEN 'Private' -- Global University Bangladesh
+    WHEN 141 THEN 'Public' -- Sylhet Medical University
+    WHEN 142 THEN 'Private' -- CCN University of Science and Technology
+    WHEN 143 THEN 'Private' -- Times University of Bangladesh
+    WHEN 144 THEN 'Private' -- Britannia University
+    WHEN 145 THEN 'Private' -- Coxs Bazar International University
+    WHEN 146 THEN 'Private' -- Z.H. Sikder University of Science and Technology
+    WHEN 147 THEN 'Private' -- Central University of Science and Technology
+    WHEN 148 THEN 'Private' -- Exim Bank Agricultural University of Bangladesh
+END;
 
 
 -- Insert the "website" data for all universities
