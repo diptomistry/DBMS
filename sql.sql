@@ -10,6 +10,8 @@ CREATE TABLE universities (
 );
 ALTER TABLE universities
 ADD COLUMN type VARCHAR(20);
+ALTER TABLE universities
+ADD COLUMN QSWorldRanking_2023 VARCHAR(20);
 -- Create Subject Table
 CREATE TABLE subjects (
     sub_id INT PRIMARY KEY AUTO_INCREMENT,--starts from 5f
@@ -239,13 +241,158 @@ VALUES
     ('Z.H. Sikder University of Science and Technology', 136),
     ('Central University of Science and Technology', 137),
     ('Exim Bank Agricultural University of Bangladesh', 138);
-
-
-
 -- Update the university name from "University of Dhaka" to "Dhaka University"
 UPDATE universities
 SET university_name = 'University of Dhaka'
 WHERE university_name = 'Dhaka University';
+-- Insert the "location" data for the universities
+UPDATE universities
+SET location = CASE university_id
+	WHEN 1 THEN 'Dhaka' -- University of Dhaka
+    WHEN 2 THEN 'Dhaka' -- Bangladesh University of Engineering and Technology
+    WHEN 3 THEN 'Chittagong' -- University of Chittagong
+    WHEN 4 THEN 'Rajshahi' -- Rajshahi University
+    WHEN 5 THEN 'Savar' -- Jahangirnagar University
+    WHEN 6 THEN 'Khulna' -- Khulna University
+    WHEN 7 THEN 'Sylhet' -- Shahjalal University of Science and Technology
+    WHEN 8 THEN 'Chittagong' -- Chittagong University of Engineering and Technology
+    WHEN 9 THEN 'Gazipur' -- Bangabandhu Sheikh Mujibur Rahman Science and Technology University
+    WHEN 10 THEN 'Mymensingh' -- Bangladesh Agricultural University
+    WHEN 12 THEN 'Dhaka' -- BRAC University
+    WHEN 15 THEN 'Gazipur' -- National University, Bangladesh
+    WHEN 16 THEN 'Dhaka' -- North South University
+    WHEN 17 THEN 'Dhaka' -- Daffodil International University
+    WHEN 18 THEN 'Dhaka' -- American International University-Bangladesh
+    WHEN 21 THEN 'Dhaka' -- Independent University, Bangladesh
+    WHEN 22 THEN 'Dhaka' -- Ahsanullah University of Science and Technology
+    WHEN 24 THEN 'Dhaka' -- East West University
+    WHEN 26 THEN 'Dhaka' -- United International University
+    WHEN 27 THEN 'Chittagong' -- Asian University for Women
+    WHEN 28 THEN 'Gazipur' -- Islamic University of Technology
+    WHEN 29 THEN 'Chittagong' -- International Islamic University, Chittagong
+    WHEN 30 THEN 'Dhaka' -- Bangabandhu Sheikh Mujib Medical University
+    WHEN 31 THEN 'Khulna' -- Khulna University of Engineering and Technology
+    WHEN 32 THEN 'Mirpur' -- Bangladesh University of Professionals
+    WHEN 33 THEN 'Dhaka' -- Stamford University Bangladesh
+    WHEN 34 THEN 'Dhaka' -- University of Liberal Arts Bangladesh
+    WHEN 36 THEN 'Dhaka' -- University of Asia Pacific
+    WHEN 37 THEN 'Dhaka' -- International University of Business Agriculture and Technology
+    WHEN 38 THEN 'Dhaka' -- Southeast University, Bangladesh
+    WHEN 39 THEN 'Dhaka' -- Jagannath University
+    WHEN 40 THEN 'Dhaka' -- Bangladesh University of Textiles
+    WHEN 41 THEN 'Kushtia' -- Islamic University
+    WHEN 42 THEN 'Gazipur' -- Bangabandhu Sheikh Mujibur Rahman Agricultural University
+    WHEN 44 THEN 'Barisal' -- University of Barisal
+    WHEN 45 THEN 'Dhaka' -- Bangladesh University of Business and Technology
+    WHEN 46 THEN 'Kulshi' -- Chittagong Veterinary and Animal Sciences University
+    WHEN 47 THEN 'Rajshahi' -- Rajshahi University of Engineering and Technology
+    WHEN 48 THEN 'Noakhali' -- Noakhali Science and Technology University
+    WHEN 49 THEN 'Gazipur' -- Dhaka University of Engineering and Technology
+    WHEN 51 THEN 'Dhaka' -- Green University of Bangladesh
+    WHEN 52 THEN 'Dhaka' -- Canadian University of Bangladesh
+    WHEN 53 THEN 'Jessore' -- Jashore University of Science and Technology
+    WHEN 54 THEN 'Dhaka' -- ASA University Bangladesh
+    WHEN 55 THEN 'Dhaka' -- Sher-e-Bangla Agricultural University
+    WHEN 56 THEN 'Dinajpur' -- Hajee Mohammad Danesh Science and Technology University
+    WHEN 57 THEN 'Dhaka' -- Primeasia University
+    WHEN 58 THEN 'Sylhet' -- Sylhet Agricultural University
+    WHEN 59 THEN 'Dhaka' -- Dhaka International University
+    WHEN 60 THEN 'Patuakhali' -- Patuakhali Science and Technology University
+    WHEN 61 THEN 'Dhaka' -- BGMEA University of Fashion and Technology
+    WHEN 62 THEN 'Tangail' -- Mawlana Bhashani Science and Technology University
+    WHEN 63 THEN 'Comilla' -- Comilla University
+    WHEN 64 THEN 'Chittagong' -- University of Science and Technology Chittagong
+    WHEN 65 THEN 'Dhaka' -- Sonargaon University
+    WHEN 66 THEN 'Sylhet' -- Metropolitan University
+    WHEN 67 THEN 'Dhaka' -- State University of Bangladesh
+    WHEN 68 THEN 'Dhaka' -- Northern University of Bangladesh
+    WHEN 69 THEN 'Dhaka' -- Eastern University, Bangladesh
+    WHEN 70 THEN 'Dhaka' -- World University of Bangladesh
+    WHEN 71 THEN 'Dhaka' -- Manarat International University
+    WHEN 72 THEN 'Rangpur' -- Begum Rokeya University, Rangpur
+    WHEN 73 THEN 'Dhaka' -- University of Information Technology and Sciences
+    WHEN 74 THEN 'Dhaka' -- Asian University of Bangladesh
+    WHEN 75 THEN 'Sylhet' -- Leading University
+    WHEN 76 THEN 'Dhaka' -- Bangabandhu Sheikh Mujibur Rahman Maritime University
+    WHEN 77 THEN 'Mymensingh' -- Jatiya Kabi Kazi Nazrul Islam University
+    WHEN 78 THEN 'Dhaka' -- Notre Dame University Bangladesh
+    WHEN 79 THEN 'Dhaka' -- Shanto Mariam University of Creative Technology
+    WHEN 80 THEN 'Chittagong' -- East Delta University
+    WHEN 81 THEN 'Dhaka' -- Gono Bishwabidyalay
+    WHEN 82 THEN 'Dhaka' -- Islamic Arabic University
+    WHEN 83 THEN 'Dhaka' -- Presidency University, Bangladesh
+    WHEN 84 THEN 'Pabna' -- Pabna Science and Technology University
+    WHEN 85 THEN 'Dhaka' -- Prime University
+    WHEN 86 THEN 'Dhaka' -- City University
+    WHEN 87 THEN 'Chuadanga' -- First Capital University of Bangladesh
+    WHEN 88 THEN 'Dhaka' -- University of Development Alternative
+    WHEN 89 THEN 'Barishal' -- University of Global Village
+    WHEN 90 THEN 'Jamalpur' -- Sheikh Fazilatunnesa Mujib University
+    WHEN 91 THEN 'Dhaka' -- Bangladesh University
+    WHEN 92 THEN 'Dhaka' -- Atish Dipankar University of Science and Technology
+    WHEN 93 THEN 'Dhaka' -- Uttara University
+    WHEN 94 THEN 'Dhaka' -- University of South Asia, Bangladesh
+    WHEN 95 THEN 'Chittagong' -- Chittagong Independent University
+    WHEN 96 THEN 'Chittagong' -- Chittagong Medical University
+    WHEN 97 THEN 'Dhaka' -- Royal University of Dhaka
+    WHEN 98 THEN 'Chittagong' -- Premier University
+    WHEN 99 THEN 'Chittagong' -- Port City International University
+    WHEN 100 THEN 'Rajshahi' -- Varendra University
+    WHEN 101 THEN 'Chittagong' -- Southern University Bangladesh
+    WHEN 102 THEN 'Dhaka' -- European University of Bangladesh
+    WHEN 103 THEN 'Sylhet' -- Sylhet International University
+    WHEN 104 THEN 'Dhaka' -- Queens University
+    WHEN 105 THEN 'Dhaka' -- IBAIS University
+    WHEN 106 THEN 'Dhaka' -- ZNRF University of Management Sciences
+    WHEN 107 THEN 'Netrokona' -- Sheikh Hasina University
+    WHEN 108 THEN 'Sylhet' -- North East University Bangladesh
+    WHEN 109 THEN 'Dhaka' -- Fareast International University
+    WHEN 110 THEN 'Dhaka' -- The Millenium University
+    WHEN 111 THEN 'Dhaka' -- The Peoples University of Bangladesh
+    WHEN 112 THEN 'Dhaka' -- Victoria University of Bangladesh
+    WHEN 113 THEN 'Chittagong' -- Begum Gulchemonara Trust University
+    WHEN 114 THEN 'Rangamati' -- Rangamati Science and Technology University
+    WHEN 115 THEN 'Dhaka' -- The International University of Scholars
+    WHEN 116 THEN 'Melandaha' -- Bangamata Sheikh Fojilatunnesa Mujib Science and Technology University
+    WHEN 117 THEN 'Chittagong' -- University of Creative Technology Chittagong
+    WHEN 118 THEN 'Shahjadpur' -- Rabindra University, Bangladesh
+    WHEN 119 THEN 'Dhaka' -- Anwer Khan Modern University
+    WHEN 120 THEN 'Natore' -- Rajshahi Science and Technology University
+    WHEN 121 THEN 'Khulna' -- North Western University
+    WHEN 122 THEN 'Dhaka' -- Bangladesh Islami University
+    WHEN 123 THEN 'Rajshahi' -- Rajshahi Medical University
+    WHEN 124 THEN 'Munshiganj' -- Hamdard University of Bangladesh
+    WHEN 125 THEN 'Gazipur' -- German University Bangladesh
+    WHEN 126 THEN 'Khulna' -- Northern University of Business and Technology, Khulna
+    WHEN 127 THEN 'Dhaka' -- Central Womens University
+    WHEN 128 THEN 'Manikgonj' -- N.P.I. University of Bangladesh
+    WHEN 129 THEN 'Feni' -- Feni University
+    WHEN 130 THEN 'Kushtia' -- Rabindra Maitree University
+    WHEN 131 THEN 'Narayanganj' -- Ranada Prasad Shaha University
+    WHEN 132 THEN 'Kishorganj' -- Ishakha International University, Bangladesh
+    WHEN 133 THEN 'Khulna' -- Khulna Agricultural University
+    WHEN 134 THEN 'Rajshahi' -- North Bengal International University
+    WHEN 135 THEN 'Bogra' -- Pundra University of Science and Technology
+    WHEN 136 THEN 'Dhaka' -- Bangladesh University of Health Sciences
+    WHEN 137 THEN 'Enayetpur' -- Khwaja Yunus Ali University
+    WHEN 138 THEN 'Dhaka' -- International Standard University
+    WHEN 139 THEN 'Bandarban' -- Bandarban University
+    WHEN 140 THEN 'Barisal' -- Global University Bangladesh
+    WHEN 141 THEN 'Sylhet' -- Sylhet Medical University
+    WHEN 142 THEN 'Comilla' -- CCN University of Science and Technology
+    WHEN 143 THEN 'Faridpur' -- Times University of Bangladesh
+    WHEN 144 THEN 'Comilla' -- Britannia University
+    WHEN 145 THEN 'Coxs Bazar' -- Coxs Bazar International University
+    WHEN 146 THEN 'Bhedorgonj' -- Z.H. Sikder University of Science and Technology
+    WHEN 147 THEN 'Dhaka' -- Central University of Science and Technology
+    WHEN 148 THEN 'Chapainawabganj' -- Exim Bank Agricultural University of Bangladesh
+END;
+
+
+
+
+
+
 
 -- Insert data into Subject Table (for sample subjects)
 INSERT INTO subjects (sub_name, university_id)
