@@ -19,6 +19,10 @@ CREATE TABLE subjects (
     university_id INT,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
+ALTER TABLE subjects
+DROP FOREIGN KEY subjects_ibfk_1;
+ALTER TABLE subjects
+DROP COLUMN university_id;
 
 -- Create Alumni Table
 CREATE TABLE alumni (
