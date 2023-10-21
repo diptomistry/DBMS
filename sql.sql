@@ -1316,3 +1316,43 @@ INSERT INTO subjects (sub_name, subject_type) VALUES
 ('Nuclear Engineering', 'Engineering'),
 ('Industrial and Production Engineering', 'Engineering'),
 ('Water Resources Engineering', 'Engineering');
+-- Insert the additional subjects with their respective faculty/department and number of seats
+INSERT INTO subjects (sub_name, subject_type) VALUES
+('Chemical Engineering', 'Engineering'),
+('Materials and Metallurgical Engineering', 'Engineering'),
+('Nanomaterials and Ceramic Engineering', 'Engineering'),
+('Civil Engineering', 'Engineering'),
+('Water Resource Engineering', 'Engineering'),
+('Mechanical Engineering', 'Engineering'),
+('Naval Architecture and Marine Engineering', 'Engineering'),
+('Industrial and Production Engineering', 'Engineering'),
+('Electrical and Electronic Engineering', 'Engineering'),
+('Computer Science and Engineering', 'Engineering'),
+('Biomedical Engineering', 'Engineering'),
+('Architecture', 'Arts'),
+('Urban and Regional Planning', 'Arts');
+-- Update the subject type to 'Science' for the specified subjects
+UPDATE subjects
+SET subject_type = 'Science'
+WHERE sub_name IN (
+    'Chemical Engineering',
+    'Materials and Metallurgical Engineering',
+    'Nanomaterials and Ceramic Engineering',
+    'Civil Engineering',
+    'Water Resource Engineering',
+    'Mechanical Engineering',
+    'Naval Architecture and Marine Engineering',
+    'Industrial and Production Engineering',
+    'Electrical and Electronic Engineering',
+    'Computer Science and Engineering',
+    'Biomedical Engineering'
+);
+UPDATE subjects
+SET subject_type = 'Science'
+WHERE sub_name='Applied Chemistry and Chemical Engineering'
+UPDATE subjects
+SET subject_type = 'Science'
+WHERE sub_name IN(
+'Electrical and Electronic Engineering',
+'Mathematics'
+);
