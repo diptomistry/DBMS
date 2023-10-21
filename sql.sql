@@ -23,6 +23,9 @@ ALTER TABLE subjects
 DROP FOREIGN KEY subjects_ibfk_1;
 ALTER TABLE subjects
 DROP COLUMN university_id;
+ALTER TABLE subjects
+ADD COLUMN subject_type VARCHAR(255);
+
 
 -- Create Alumni Table
 CREATE TABLE alumni (
@@ -1250,3 +1253,66 @@ VALUES
   -- Add more records as needed
   ('Sophia Thompson', 'BSc 2020', 'Company C', 'Canada', 'Product Manager', 'BSc', 10);
   -- Add more records as needed
+-- Insert the subjects with their respective subject types
+INSERT INTO subjects (sub_name, subject_type) VALUES
+('English', 'Arts'),
+('Bengali', 'Arts'),
+('Philosophy', 'Arts'),
+('History', 'Arts'),
+('Arabic', 'Arts'),
+('Sanskrit', 'Arts'),
+('Islamic Studies', 'Arts'),
+('Pali and Buddhist Studies', 'Arts'),
+('Persian Language and Literature', 'Arts'),
+('Finance', 'Commerce'),
+('Accounting and Information Systems', 'Commerce'),
+('Management', 'Commerce'),
+('Marketing', 'Commerce'),
+('Banking and Insurance', 'Commerce'),
+('International Business', 'Commerce'),
+('Tourism and Hospitality Management', 'Commerce'),
+('Economics', 'Social Science'),
+('Sociology', 'Social Science'),
+('Political Science', 'Social Science'),
+('Social Work', 'Social Science'),
+('Mass Communication and Journalism', 'Social Science'),
+('International Relations', 'Social Science'),
+('Public Administration', 'Social Science'),
+('Anthropology', 'Social Science'),
+('Botany', 'Science'),
+('Zoology', 'Science'),
+('Biochemistry and Molecular Biology', 'Science'),
+('Microbiology', 'Science'),
+('Pharmacy', 'Science'),
+('Physics', 'Science'),
+('Chemistry', 'Science'),
+('Theoretical Physics', 'Science'),
+('Applied Mathematics', 'Science'),
+('Statistics', 'Science'),
+('Computer Science and Engineering', 'Science'),
+('Geography and Environment', 'Science'),
+('Geology', 'Science'),
+('Disaster Science and Management', 'Science'),
+('Fine Arts', 'Arts'),
+('Graphic Design', 'Arts'),
+('Ceramics', 'Arts'),
+('Craft', 'Arts'),
+('History of Art', 'Arts'),
+('Sculpture', 'Arts'),
+('Oriental Art', 'Arts'),
+('Medicine', 'Science'),
+('Surgery', 'Science'),
+('Pediatrics', 'Science'),
+('Orthopedic Surgery', 'Science'),
+('Gynecology and Obstetrics', 'Science'),
+('Dermatology', 'Science'),
+('Radiology', 'Science'),
+('Anesthesiology', 'Science'),
+('Electrical and Electronic Engineering', 'Engineering'),
+('Civil Engineering', 'Engineering'),
+('Mechanical Engineering', 'Engineering'),
+('Applied Chemistry and Chemical Engineering', 'Engineering'),
+('Materials and Metallurgical Engineering', 'Engineering'),
+('Nuclear Engineering', 'Engineering'),
+('Industrial and Production Engineering', 'Engineering'),
+('Water Resources Engineering', 'Engineering');
