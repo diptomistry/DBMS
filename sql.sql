@@ -388,6 +388,147 @@ SET location = CASE university_id
     WHEN 148 THEN 'Chapainawabganj' -- Exim Bank Agricultural University of Bangladesh
 END;
 
+UPDATE universities
+SET founded_date = CASE university_id
+    WHEN 1 THEN '1921-07-01' -- University of Dhaka
+    WHEN 2 THEN '1962-02-25' -- Bangladesh University of Engineering and Technology
+    WHEN 3 THEN '1966-11-18' -- University of Chittagong
+    WHEN 4 THEN '1953-07-06' -- Rajshahi University
+    WHEN 5 THEN '1970-01-12' -- Jahangirnagar University
+    WHEN 6 THEN '1991-09-30' -- Khulna University
+    WHEN 7 THEN '1987-11-01' -- Shahjalal University of Science and Technology
+    WHEN 8 THEN '2003-10-17' -- Chittagong University of Engineering and Technology
+    WHEN 9 THEN '1991-07-01' -- Bangabandhu Sheikh Mujibur Rahman Science and Technology University
+    WHEN 10 THEN '1961-09-03' -- Bangladesh Agricultural University
+    WHEN 12 THEN '2001-01-09' -- BRAC University
+    WHEN 15 THEN '1992-10-21' -- National University, Bangladesh
+    WHEN 16 THEN '1992-02-10' -- North South University
+    WHEN 17 THEN '2002-01-24' -- Daffodil International University
+    WHEN 18 THEN '1994-11-18' -- American International University-Bangladesh
+    WHEN 21 THEN '1993-01-12' -- Independent University, Bangladesh
+    WHEN 22 THEN '1995-01-01' -- Ahsanullah University of Science and Technology
+    WHEN 24 THEN '1996-01-03' -- East West University
+    WHEN 26 THEN '2003-02-04' -- United International University
+    WHEN 27 THEN '2008-06-19' -- Asian University for Women
+    WHEN 28 THEN '2001-12-18' -- Islamic University of Technology
+    WHEN 29 THEN '1985-03-10' -- International Islamic University, Chittagong
+    WHEN 30 THEN '1998-01-02' -- Bangabandhu Sheikh Mujib Medical University
+    WHEN 31 THEN '2003-08-11' -- Khulna University of Engineering and Technology
+    WHEN 32 THEN '2008-01-08' -- Bangladesh University of Professionals
+    WHEN 33 THEN '2002-01-24' -- Stamford University Bangladesh
+    WHEN 34 THEN '2003-05-20' -- University of Liberal Arts Bangladesh
+    WHEN 36 THEN '1996-12-21' -- University of Asia Pacific
+    WHEN 37 THEN '2003-11-01' -- International University of Business Agriculture and Technology
+    WHEN 38 THEN '2002-06-12' -- Southeast University, Bangladesh
+    WHEN 39 THEN '2005-08-02' -- Jagannath University
+    WHEN 40 THEN '2010-12-29' -- Bangladesh University of Textiles
+    WHEN 41 THEN '1980-02-22' -- Islamic University
+    WHEN 42 THEN '2001-03-22' -- Bangabandhu Sheikh Mujibur Rahman Agricultural University
+    WHEN 44 THEN '2015-02-20' -- University of Barisal
+    WHEN 45 THEN '2001-02-12' -- Bangladesh University of Business and Technology
+    WHEN 46 THEN '2006-08-28' -- Chittagong Veterinary and Animal Sciences University
+    WHEN 47 THEN '2003-01-02' -- Rajshahi University of Engineering and Technology
+    WHEN 48 THEN '2001-05-22' -- Noakhali Science and Technology University
+    WHEN 49 THEN '2001-07-12' -- Dhaka University of Engineering and Technology
+    WHEN 51 THEN '2003-05-14' -- Green University of Bangladesh
+    WHEN 52 THEN '2003-06-05' -- Canadian University of Bangladesh
+    WHEN 53 THEN '2007-08-21' -- Jashore University of Science and Technology
+    WHEN 54 THEN '2006-12-27' -- ASA University Bangladesh
+    WHEN 55 THEN '2001-07-09' -- Sher-e-Bangla Agricultural University
+    WHEN 56 THEN '2003-12-20' -- Hajee Mohammad Danesh Science and Technology University
+    WHEN 57 THEN '2003-05-24' -- Primeasia University
+    WHEN 58 THEN '2006-11-03' -- Sylhet Agricultural University
+    WHEN 59 THEN '2004-08-21' -- Dhaka International University
+    WHEN 60 THEN '2009-03-11' -- Patuakhali Science and Technology University
+    WHEN 61 THEN '2012-11-07' -- BGMEA University of Fashion and Technology
+    WHEN 62 THEN '2001-01-24' -- Mawlana Bhashani Science and Technology University
+    WHEN 63 THEN '2006-05-15' -- Comilla University
+    WHEN 64 THEN '2001-07-01' -- University of Science and Technology Chittagong
+    WHEN 65 THEN '2012-06-25' -- Sonargaon University
+    WHEN 66 THEN '2003-07-21' -- Metropolitan University
+    WHEN 67 THEN '2002-07-14' -- State University of Bangladesh
+    WHEN 68 THEN '2002-05-20' -- Northern University of Bangladesh
+    WHEN 69 THEN '2003-09-14' -- Eastern University, Bangladesh
+    WHEN 70 THEN '2003-11-07' -- World University of Bangladesh
+    WHEN 71 THEN '2003-06-15' -- Manarat International University
+    WHEN 72 THEN '2008-02-15' -- Begum Rokeya University, Rangpur
+    WHEN 73 THEN '2003-12-31' -- University of Information Technology and Sciences
+    WHEN 74 THEN '2006-08-14' -- Asian University of Bangladesh
+    WHEN 75 THEN '2001-07-16' -- Leading University
+    WHEN 76 THEN '2013-05-15' -- Bangabandhu Sheikh Mujibur Rahman Maritime University
+    WHEN 77 THEN '2007-05-01' -- Jatiya Kabi Kazi Nazrul Islam University
+    WHEN 78 THEN '2013-02-27' -- Notre Dame University Bangladesh
+    WHEN 79 THEN '2003-01-08' -- Shanto Mariam University of Creative Technology
+    WHEN 80 THEN '2010-11-30' -- East Delta University
+    WHEN 81 THEN '1996-05-14' -- Gono Bishwabidyalay
+    WHEN 82 THEN '2012-11-03' -- Islamic Arabic University
+    WHEN 83 THEN '2003-04-25' -- Presidency University, Bangladesh
+    WHEN 84 THEN '2008-01-10' -- Pabna Science and Technology University
+    WHEN 85 THEN '2002-12-03' -- Prime University
+    WHEN 86 THEN '2003-07-15' -- City University
+    WHEN 87 THEN '2013-02-15' -- First Capital University of Bangladesh
+    WHEN 88 THEN '2000-06-15' -- University of Development Alternative
+    WHEN 89 THEN '2006-01-01' -- University of Global Village
+    WHEN 90 THEN '2006-01-01' -- Sheikh Fazilatunnesa Mujib University
+    WHEN 91 THEN '2001-06-25' -- Bangladesh University
+    WHEN 92 THEN '2004-11-19' -- Atish Dipankar University of Science and Technology
+    WHEN 93 THEN '2003-05-11' -- Uttara University
+    WHEN 94 THEN '2003-04-16' -- University of South Asia, Bangladesh
+    WHEN 95 THEN '2003-12-21' -- Chittagong Independent University
+    WHEN 96 THEN '2003-12-01' -- Chittagong Medical University
+    WHEN 97 THEN '2004-07-14' -- Royal University of Dhaka
+    WHEN 98 THEN '2002-09-29' -- Premier University
+    WHEN 99 THEN '2012-01-11' -- Port City International University
+    WHEN 100 THEN '2012-05-22' -- Varendra University
+    WHEN 101 THEN '2002-01-16' -- Southern University Bangladesh
+    WHEN 102 THEN '2001-09-03' -- European University of Bangladesh
+    WHEN 103 THEN '2012-11-10' -- Sylhet International University
+    WHEN 104 THEN '2003-07-18' -- Queens University
+    WHEN 105 THEN '2001-09-03' -- IBAIS University
+    WHEN 106 THEN '2003-02-26' -- ZNRF University of Management Sciences
+    WHEN 107 THEN '2012-11-22' -- Sheikh Hasina University
+    WHEN 108 THEN '2012-08-11' -- North East University Bangladesh
+    WHEN 109 THEN '2002-08-27' -- Fareast International University
+    WHEN 110 THEN '2003-01-09' -- The Millenium University
+    WHEN 111 THEN '2004-11-09' -- The Peoples University of Bangladesh
+    WHEN 112 THEN '2003-09-05' -- Victoria University of Bangladesh
+    WHEN 113 THEN '2009-09-14' -- Begum Gulchemonara Trust University
+    WHEN 114 THEN '2015-02-04' -- Rangamati Science and Technology University
+    WHEN 115 THEN '2013-08-22' -- The International University of Scholars
+    WHEN 116 THEN '2013-12-15' -- Bangamata Sheikh Fojilatunnesa Mujib Science and Technology University
+    WHEN 117 THEN '2012-01-01' -- University of Creative Technology Chittagong
+    WHEN 118 THEN '2012-12-14' -- Rabindra University, Bangladesh
+    WHEN 119 THEN '2007-02-14' -- Anwer Khan Modern University
+    WHEN 120 THEN '2012-01-22' -- Rajshahi Science and Technology University
+    WHEN 121 THEN '2012-01-23' -- North Western University
+    WHEN 122 THEN '2005-01-03' -- Bangladesh Islami University
+    WHEN 123 THEN '2014-01-25' -- Rajshahi Medical University
+    WHEN 124 THEN '2012-02-15' -- Hamdard University of Bangladesh
+    WHEN 125 THEN '2012-02-19' -- German University Bangladesh
+    WHEN 126 THEN '2012-03-15' -- Northern University of Business and Technology, Khulna
+    WHEN 127 THEN '2014-01-16' -- Central Womens University
+    WHEN 128 THEN '2012-05-29' -- N.P.I. University of Bangladesh
+    WHEN 129 THEN '2013-08-06' -- Feni University
+    WHEN 130 THEN '2013-11-06' -- Rabindra Maitree University
+    WHEN 131 THEN '2014-01-09' -- Ranada Prasad Shaha University
+    WHEN 132 THEN '2013-02-26' -- Ishakha International University, Bangladesh
+    WHEN 133 THEN '2014-01-01' -- Khulna Agricultural University
+    WHEN 134 THEN '2013-02-02' -- North Bengal International University
+    WHEN 135 THEN '2015-02-01' -- Pundra University of Science and Technology
+    WHEN 136 THEN '2015-04-01' -- Bangladesh University of Health Sciences
+    WHEN 137 THEN '2016-01-01' -- Khwaja Yunus Ali University
+    WHEN 138 THEN '2016-02-01' -- International Standard University
+    WHEN 139 THEN '2015-12-16' -- Bandarban University
+    WHEN 140 THEN '2016-01-01' -- Global University Bangladesh
+    WHEN 141 THEN '2015-03-01' -- Sylhet Medical University
+    WHEN 142 THEN '2015-04-01' -- CCN University of Science and Technology
+    WHEN 143 THEN '2016-02-01' -- Times University of Bangladesh
+    WHEN 144 THEN '2016-02-01' -- Britannia University
+    WHEN 145 THEN '2015-02-01' -- Coxs Bazar International University
+    WHEN 146 THEN '2017-01-01' -- Z.H. Sikder University of Science and Technology
+    WHEN 147 THEN '2016-12-01' -- Central University of Science and Technology
+    WHEN 148 THEN '2016-12-15' -- Exim Bank Agricultural University of Bangladesh
+END;
 
 
 
