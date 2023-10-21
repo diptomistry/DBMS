@@ -8,7 +8,8 @@ CREATE TABLE universities (
     website VARCHAR(255),
     ranking_2023 INT
 );
-
+ALTER TABLE universities
+ADD COLUMN type VARCHAR(20);
 -- Create Subject Table
 CREATE TABLE subjects (
     sub_id INT PRIMARY KEY AUTO_INCREMENT,--starts from 5f
@@ -96,11 +97,11 @@ CREATE TABLE university_metrics (
 ) AUTO_INCREMENT = 1; -- Set the starting value to 1
 
 
-SET SQL_SAFE_UPDATES = 0;
+SET SQL_SAFE_UPDATES = 1;
 -- Insert data into the University Table (ignoring the "town" column)
 INSERT INTO universities (university_name, ranking_2023)
 VALUES
-    ('University of Dhaka', 1),
+    ('Dhaka University', 1),
     ('BRAC University', 2),
     ('Bangladesh University of Engineering and Technology', 3),
     ('Rajshahi University', 4),
@@ -241,7 +242,10 @@ VALUES
 
 
 
-
+-- Update the university name from "University of Dhaka" to "Dhaka University"
+UPDATE universities
+SET university_name = 'University of Dhaka'
+WHERE university_name = 'Dhaka University';
 
 -- Insert data into Subject Table (for sample subjects)
 INSERT INTO subjects (sub_name, university_id)
