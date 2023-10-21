@@ -391,6 +391,148 @@ END;
 
 
 
+-- Insert the "website" data for all universities
+UPDATE universities
+SET website = CASE university_id
+    WHEN 1 THEN 'http://www.du.ac.bd' -- University of Dhaka
+    WHEN 2 THEN 'http://www.buet.ac.bd' -- Bangladesh University of Engineering and Technology
+    WHEN 3 THEN 'http://www.cu.ac.bd' -- University of Chittagong
+    WHEN 4 THEN 'http://www.ru.ac.bd' -- Rajshahi University
+    WHEN 5 THEN 'http://www.juniv.edu' -- Jahangirnagar University
+    WHEN 6 THEN 'http://www.ku.ac.bd' -- Khulna University
+    WHEN 7 THEN 'http://www.sust.edu' -- Shahjalal University of Science and Technology
+    WHEN 8 THEN 'http://www.cuet.ac.bd' -- Chittagong University of Engineering and Technology
+    WHEN 9 THEN 'http://www.bsmrstu.edu.bd' -- Bangabandhu Sheikh Mujibur Rahman Science and Technology University
+    WHEN 10 THEN 'http://www.bau.edu.bd' -- Bangladesh Agricultural University
+    WHEN 12 THEN 'http://www.bracu.ac.bd' -- BRAC University
+    WHEN 15 THEN 'http://www.nu.ac.bd' -- National University, Bangladesh
+    WHEN 16 THEN 'http://www.northsouth.edu' -- North South University
+    WHEN 17 THEN 'http://www.daffodilvarsity.edu.bd' -- Daffodil International University
+    WHEN 18 THEN 'https://www.aiub.edu/' -- American International University-Bangladesh
+    WHEN 21 THEN 'http://www.iub.edu.bd' -- Independent University, Bangladesh
+    WHEN 22 THEN 'https://www.aust.edu/' -- Ahsanullah University of Science and Technology
+    WHEN 24 THEN 'http://www.ewubd.edu/' -- East West University
+    WHEN 26 THEN 'http://www.uiu.ac.bd' -- United International University
+    WHEN 27 THEN 'https://www.asian-university.org/' -- Asian University for Women
+    WHEN 28 THEN 'https://iutoic-dhaka.edu.bd/' -- Islamic University of Technology
+    WHEN 29 THEN 'http://www.iiuc.ac.bd' -- International Islamic University, Chittagong
+    WHEN 30 THEN 'https://bsmmu.edu.bd/' -- Bangabandhu Sheikh Mujib Medical University
+    WHEN 31 THEN 'https://www.kuet.ac.bd/' -- Khulna University of Engineering and Technology
+    WHEN 32 THEN 'https://www.bup.edu.bd/' -- Bangladesh University of Professionals
+    WHEN 33 THEN 'https://www.stamforduniversity.edu.bd/' -- Stamford University Bangladesh
+    WHEN 34 THEN 'http://www.ulab.edu.bd' -- University of Liberal Arts Bangladesh
+    WHEN 36 THEN 'https://uap-bd.edu/' -- University of Asia Pacific
+    WHEN 37 THEN 'http://www.iubat.edu/' -- International University of Business Agriculture and Technology
+    WHEN 38 THEN 'http://www.seu.ac.bd' -- Southeast University, Bangladesh
+    WHEN 39 THEN 'https://www.jnu.ac.bd/' -- Jagannath University
+    WHEN 40 THEN 'http://www.butex.edu.bd' -- Bangladesh University of Textiles
+    WHEN 41 THEN 'https://iu.ac.bd/' -- Islamic University
+    WHEN 42 THEN 'https://bsmrau.edu.bd/' -- Bangabandhu Sheikh Mujibur Rahman Agricultural University
+    WHEN 44 THEN 'https://barisaluniv.edu.bd/' -- University of Barisal
+    WHEN 45 THEN 'https://www.bubt.edu.bd/' -- Bangladesh University of Business and Technology
+    WHEN 46 THEN 'http://www.cvasu.ac.bd/' -- Chittagong Veterinary and Animal Sciences University
+    WHEN 47 THEN 'https://ruet.ac.bd/' -- Rajshahi University of Engineering and Technology
+    WHEN 48 THEN 'http://www.nstu.edu.bd/' -- Noakhali Science and Technology University
+    WHEN 49 THEN 'https://duet.ac.bd/' -- Dhaka University of Engineering and Technology
+    WHEN 51 THEN 'http://www.green.edu.bd' -- Green University of Bangladesh
+    WHEN 52 THEN 'http://www.cub.edu.bd/' -- Canadian University of Bangladesh
+    WHEN 53 THEN 'https://www.just.edu.bd/' -- Jashore University of Science and Technology
+    WHEN 54 THEN 'https://www.asaub.edu.bd/' -- ASA University Bangladesh
+    WHEN 55 THEN 'http://www.sau.edu.bd/' -- Sher-e-Bangla Agricultural University
+    WHEN 56 THEN 'https://www.hstu.ac.bd/' -- Hajee Mohammad Danesh Science and Technology University
+    WHEN 57 THEN 'http://www.primeasia.edu.bd/' -- Primeasia University
+    WHEN 58 THEN 'http://www.sau.ac.bd/' -- Sylhet Agricultural University
+    WHEN 59 THEN 'https://www.diu.edu.bd/' -- Dhaka International University
+    WHEN 60 THEN 'https://www.pstu.edu/' -- Patuakhali Science and Technology University
+    WHEN 61 THEN 'http://www.buft.edu.bd/' -- BGMEA University of Fashion and Technology
+    WHEN 62 THEN 'https://mbstu.ac.bd/' -- Mawlana Bhashani Science and Technology University
+    WHEN 63 THEN 'http://www.cou.ac.bd/' -- Comilla University
+    WHEN 64 THEN 'https://www.ustc.ac.bd/' -- University of Science and Technology Chittagong
+    WHEN 65 THEN 'https://www.sonargaonuniversity.ac.bd/' -- Sonargaon University
+    WHEN 66 THEN 'http://www.metrouni.edu.bd/' -- Metropolitan University
+    WHEN 67 THEN 'https://www.sub.edu.bd/' -- State University of Bangladesh
+    WHEN 68 THEN 'http://www.nub.ac.bd/' -- Northern University of Bangladesh
+    WHEN 69 THEN 'http://www.easternuni.edu.bd/' -- Eastern University, Bangladesh
+    WHEN 70 THEN 'http://www.wub.edu.bd/' -- World University of Bangladesh
+    WHEN 71 THEN 'https://miu.edu.bd/' -- Manarat International University
+    WHEN 72 THEN 'http://www.brur.ac.bd/' -- Begum Rokeya University, Rangpur
+    WHEN 73 THEN 'https://www.uit.edu/' -- University of Information Technology and Sciences
+    WHEN 74 THEN 'http://www.aub.edu.bd/' -- Asian University of Bangladesh
+    WHEN 75 THEN 'http://www.lus.ac.bd/' -- Leading University
+    WHEN 76 THEN 'http://bsmrmu.edu.bd/' -- Bangabandhu Sheikh Mujibur Rahman Maritime University
+    WHEN 77 THEN 'https://www.jkkniu.edu.bd/' -- Jatiya Kabi Kazi Nazrul Islam University
+    WHEN 78 THEN 'https://www.ndub.edu.bd/' -- Notre Dame University Bangladesh
+    WHEN 79 THEN 'https://www.smuct.edu.bd/' -- Shanto Mariam University of Creative Technology
+    WHEN 80 THEN 'https://www.eastdelta.edu.bd/' -- East Delta University
+    WHEN 81 THEN 'http://www.gonouniversity.edu.bd/' -- Gono Bishwabidyalay
+    WHEN 82 THEN 'https://www.iau.edu.bd/' -- Islamic Arabic University
+    WHEN 83 THEN 'https://www.presidencyuniversity.edu.bd/' -- Presidency University, Bangladesh
+    WHEN 84 THEN 'https://www.pstu.edu.bd/' -- Pabna Science and Technology University
+    WHEN 85 THEN 'http://primeuniversity.edu.bd/' -- Prime University
+    WHEN 86 THEN 'http://www.cityuniversity.edu.bd/' -- City University
+    WHEN 87 THEN 'http://fcub.edu.bd/' -- First Capital University of Bangladesh
+    WHEN 88 THEN 'https://www.uoda.edu.bd/' -- University of Development Alternative
+    WHEN 89 THEN 'http://www.ugv.edu.bd/' -- University of Global Village
+    WHEN 90 THEN 'http://www.sfmuniversity.org/' -- Sheikh Fazilatunnesa Mujib University
+    WHEN 91 THEN 'https://www.bu.edu.bd/' -- Bangladesh University
+    WHEN 92 THEN 'http://www.atishdipankaruniversity.edu.bd/' -- Atish Dipankar University of Science and Technology
+    WHEN 93 THEN 'https://www.uttarauniversity.edu.bd/' -- Uttara University
+    WHEN 94 THEN 'https://www.usa.edu.bd/' -- University of South Asia, Bangladesh
+    WHEN 95 THEN 'http://www.ciu.edu.bd/' -- Chittagong Independent University
+    WHEN 96 THEN 'https://www.cmu.edu.bd/' -- Chittagong Medical University
+    WHEN 97 THEN 'http://www.royal.edu.bd/' -- Royal University of Dhaka
+    WHEN 98 THEN 'https://www.puc.ac.bd/' -- Premier University
+    WHEN 99 THEN 'https://www.pcui.edu.bd/' -- Port City International University
+    WHEN 100 THEN 'https://vu.edu.bd/' -- Varendra University
+    WHEN 101 THEN 'https://subd.edu.bd/' -- Southern University Bangladesh
+    WHEN 102 THEN 'http://www.eub.edu.bd/' -- European University of Bangladesh
+    WHEN 103 THEN 'https://siu.edu.bd/' -- Sylhet International University
+    WHEN 104 THEN 'http://www.queensuniversity.edu.bd/' -- Queens University
+    WHEN 105 THEN 'http://ibaisuniversity.edu.bd/' -- IBAIS University
+    WHEN 106 THEN 'https://www.znrf.ac.bd/' -- ZNRF University of Management Sciences
+    WHEN 107 THEN 'http://www.shubd.net/' -- Sheikh Hasina University
+    WHEN 108 THEN 'https://www.neub.edu.bd/' -- North East University Bangladesh
+    WHEN 109 THEN 'https://www.fiu.edu.bd/' -- Fareast International University
+    WHEN 110 THEN 'https://www.millennium.edu.bd/' -- The Millenium University
+    WHEN 111 THEN 'http://www.pob.edu.bd/' -- The Peoples University of Bangladesh
+    WHEN 112 THEN 'http://www.vub.edu.bd/' -- Victoria University of Bangladesh
+    WHEN 113 THEN 'http://www.bgtu.edu.bd/' -- Begum Gulchemonara Trust University
+    WHEN 114 THEN 'https://www.rstu.edu.bd/' -- Rangamati Science and Technology University
+    WHEN 115 THEN 'http://www.tiub.edu.bd/' -- The International University of Scholars
+    WHEN 116 THEN 'http://www.bsfmu.edu.bd/' -- Bangamata Sheikh Fojilatunnesa Mujib Science and Technology University
+    WHEN 117 THEN 'https://www.uctc.edu.bd/' -- University of Creative Technology Chittagong
+    WHEN 118 THEN 'https://www.rub.edu.bd/' -- Rabindra University, Bangladesh
+    WHEN 119 THEN 'http://akmnu.edu.bd/' -- Anwer Khan Modern University
+    WHEN 120 THEN 'http://www.rstu.edu.bd/' -- Rajshahi Science and Technology University
+    WHEN 121 THEN 'https://www.nwu.edu.bd/' -- North Western University
+    WHEN 122 THEN 'https://www.biu.ac.bd/' -- Bangladesh Islami University
+    WHEN 123 THEN 'https://rsmu.edu.bd/' -- Rajshahi Medical University
+    WHEN 124 THEN 'https://www.hamdarduniversity.edu.bd/' -- Hamdard University of Bangladesh
+    WHEN 125 THEN 'https://www.gub.edu.bd/' -- German University Bangladesh
+    WHEN 126 THEN 'https://www.nubtkhulna.edu.bd/' -- Northern University of Business and Technology, Khulna
+    WHEN 127 THEN 'https://www.cwu.edu.bd/' -- Central Women's University
+    WHEN 128 THEN 'https://www.npiub.edu.bd/' -- N.P.I. University of Bangladesh
+    WHEN 129 THEN 'http://www.feniuniversity.edu.bd/' -- Feni University
+    WHEN 130 THEN 'http://rmu.edu.bd/' -- Rabindra Maitree University
+    WHEN 131 THEN 'https://www.rpsu.edu.bd/' -- Ranada Prasad Shaha University
+    WHEN 132 THEN 'http://iiubd.edu.bd/' -- Ishakha International University, Bangladesh
+    WHEN 133 THEN 'https://www.kau.edu.bd/' -- Khulna Agricultural University
+    WHEN 134 THEN 'https://www.nbiu.edu.bd/' -- North Bengal International University
+    WHEN 135 THEN 'http://www.pust.ac.bd/' -- Pundra University of Science and Technology
+    WHEN 136 THEN 'http://www.buhs.edu.bd/' -- Bangladesh University of Health Sciences
+    WHEN 137 THEN 'https://kyau.edu.bd/' -- Khwaja Yunus Ali University
+    WHEN 138 THEN 'https://www.isubd.edu.bd/' -- International Standard University
+    WHEN 139 THEN 'http://www.bub.edu.bd/' -- Bandarban University
+    WHEN 140 THEN 'http://www.globaluniversity.edu.bd/' -- Global University Bangladesh
+    WHEN 141 THEN 'https://www.smu.edu.bd/' -- Sylhet Medical University
+    WHEN 142 THEN 'http://www.cun.edu.bd/' -- CCN University of Science and Technology
+    WHEN 143 THEN 'https://www.timesuniversitybd.edu.bd/' -- Times University of Bangladesh
+    WHEN 144 THEN 'http://www.britannia.edu.bd/' -- Britannia University
+    WHEN 145 THEN 'http://www.cbiu.ac.bd/' -- Cox's Bazar International University
+    WHEN 146 THEN 'http://www.zhsust.edu.bd/' -- Z.H. Sikder University of Science and Technology
+    WHEN 147 THEN 'http://www.cust.edu.bd/' -- Central University of Science and Technology
+    WHEN 148 THEN 'https://www.ebaub.edu.bd/' -- Exim Bank Agricultural University of Bangladesh
+END;
 
 
 
