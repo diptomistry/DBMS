@@ -85,7 +85,7 @@ ADD COLUMN Email VARCHAR(255);
 CREATE TABLE facilities (
     facility_id INT PRIMARY KEY AUTO_INCREMENT,
     facility_name VARCHAR(255),
-    location VARCHAR(255),
+    facility_weight INT,
     university_id INT,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
@@ -1432,3 +1432,15 @@ VALUES
     (2, 'Rayhan Rashed', 'Lecturer', 'rayhan@cse.buet.ac.bd', 5),
     (2, 'Mohammad Tawhidul Hasan Bhuiyan', 'Lecturer', 'tawhid@cse.buet.ac.bd', 5),
     (2, 'Navid Bin Hasan', 'Lecturer', 'navidhasan0@gmail.com, navid@teacher.cse.buet.ac.bd', 5);
+
+
+-- Insert data for university_id 1
+INSERT INTO facilities (facility_name, university_id, facility_weight)
+VALUES
+    ('Faculties', 1, 13),
+    ('Departments', 1, 83),
+    ('Institutes', 1, 12),
+    ('Residential Halls', 1, 20),
+    ('Hostels',  1, 3),
+    ('Research Centres',  1, 56),
+    ('Library',  1, 3);
