@@ -38,7 +38,9 @@ CREATE TABLE alumni (
     university_id INT,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
-
+ALTER TABLE alumni
+ADD COLUMN sub_id INT,
+ADD FOREIGN KEY (sub_id) REFERENCES subjects(sub_id);
 -- Delete graduation_year column from Alumni table
 ALTER TABLE Alumni
 DROP COLUMN graduation_year;
@@ -1259,6 +1261,9 @@ VALUES
   ('Sophia Thompson', 'BSc 2020', 'Company C', 'Canada', 'Product Manager', 'BSc', 10);
   -- Add more records as needed
 -- Insert the subjects with their respective subject types
+SET SQL_SAFE_UPDATES = 0;
+UPDATE alumni
+SET sub_id = 5;
 INSERT INTO subjects (sub_name, subject_type) VALUES
 ('English', 'Arts'),
 ('Bengali', 'Arts'),
@@ -1484,6 +1489,11 @@ VALUES
     (2, 'Research Publications', 1000, 2023);
 
 
+INSERT INTO professors (university_id, full_name, Designation, Email, sub_id)
+VALUES
+    (1, 'Satyendra Nath Bose', 'Professor', 'null', 8);
 
-
-
+INSERT INTO awards (award_name, year, recipient_id)
+VALUES
+  ('Padma Bhushan', 1954, 156),  -- Satyendra Nath Bose
+  ('Padma Vibhushan', 1962, 156);  -- Satyendra Nath Bose
