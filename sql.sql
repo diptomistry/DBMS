@@ -1264,6 +1264,11 @@ VALUES
 SET SQL_SAFE_UPDATES = 0;
 UPDATE alumni
 SET sub_id = 5;
+
+INSERT INTO Alumni (full_name, `batch`, `Current Employer`,`location` ,`Current Designation`, degree_earned, university_id,sub_id)
+VALUES
+    ('Bangabandhu Sheikh Mujibur Rahman', '5th', 'null','Bangladesh', 'null', 'BSc', 1,91);
+
 INSERT INTO subjects (sub_name, subject_type) VALUES
 ('English', 'Arts'),
 ('Bengali', 'Arts'),
@@ -1366,6 +1371,9 @@ WHERE sub_name IN(
 'Electrical and Electronic Engineering',
 'Mathematics'
 );
+
+INSERT INTO subjects (sub_name, subject_type) VALUES
+('Law', 'Social Science');
 INSERT INTO professors (university_id, full_name, Designation, Email, sub_id)
 VALUES
     (1, 'Dr. Saifuddin Md. Tareeq', 'Professor & Chairman', 'smtareeq@du.ac.bd', 5),
