@@ -1453,3 +1453,37 @@ VALUES
     
     ('Research Centres',  1, 6),
     ('Library',  2, 2);
+-- Insert University of Dhaka's metrics for 2023
+INSERT INTO university_metrics (university_id, metric_name, value, year)
+VALUES
+    (1, 'Enrollment', 37018, 2023),
+    (1, 'Budget', 2500000000, 2023),
+    (1, 'Faculty-to-Student Ratio', 1/19, 2023),
+    (1, 'Research Funding', 500000000, 2023),
+    (1, 'Campus Size (in acres)', 600, 2023),
+    (1, 'Graduation Rate', 0.75, 2023),
+    (1, 'Acceptance Rate', 0.15, 2023),
+    (1, 'Student Satisfaction Rating', 0.90, 2023),
+
+    (1, 'Endowment', 1000000000, 2023),
+    (1, 'Research Publications', 2000, 2023);
+
+-- Insert BUET's metrics for 2023
+INSERT INTO university_metrics (university_id, metric_name, value, year)
+VALUES
+    (2, 'Enrollment', 6237, 2023),
+    (2, 'Budget', 1500000000, 2023),
+    (2, 'Faculty-to-Student Ratio', 1/13.2, 2023),
+    (2, 'Research Funding', 500000000, 2023),
+    (2, 'Campus Size (in acres)', 75, 2023),
+    (2, 'Graduation Rate', 0.95, 2023),
+    (2, 'Acceptance Rate', 0.12, 2023),
+    (2, 'Student Satisfaction Rating', 0.85, 2023),
+
+    (2, 'Endowment', 1000000000, 2023),
+    (2, 'Research Publications', 1000, 2023);
+
+
+
+
+
