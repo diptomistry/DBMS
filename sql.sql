@@ -75,6 +75,11 @@ CREATE TABLE professors (
     sub_id INT,
     FOREIGN KEY (sub_id) REFERENCES subjects(sub_id)
 );
+ALTER TABLE professors
+ADD COLUMN university_id INT,
+ADD FOREIGN KEY (university_id) REFERENCES universities(university_id);
+ALTER TABLE professors
+ADD COLUMN Email VARCHAR(255);
 
 -- Create Facilities Table
 CREATE TABLE facilities (
@@ -1356,3 +1361,74 @@ WHERE sub_name IN(
 'Electrical and Electronic Engineering',
 'Mathematics'
 );
+INSERT INTO professors (university_id, full_name, Designation, Email, sub_id)
+VALUES
+    (1, 'Dr. Saifuddin Md. Tareeq', 'Professor & Chairman', 'smtareeq@du.ac.bd', 5),
+    (1, 'Dr. Suraiya Pervin', 'Professor', 'suraiya@du.ac.bd', 5),
+    (1, 'Dr. Md. Haider Ali', 'Professor', 'haider@du.ac.bd', 5),
+    (1, 'Dr. Hafiz Md. Hasan Babu', 'Professor', 'hafizbabu@du.ac.bd', 5),
+    (1, 'Dr. Md. Rezaul Karim', 'Professor', 'rkarim@du.ac.bd', 5),
+    (1, 'Dr. Md. Hasanuzzaman', 'Professor', 'hzaman@du.ac.bd', 5),
+    (1, 'Dr. Shabbir Ahmed', 'Professor', 'sumaiyarafia@gmail.com', 5),
+    (1, 'Dr. Md. Mustafizur Rahman', 'Professor', 'mustafiz@du.ac.bd', 5),
+    (1, 'Dr. Md. Abdur Razzaque', 'Professor', 'm-a-razzaque@yahoo.com', 5),
+    (1, 'Dr. Chowdhury Farhan Ahmed', 'Professor', 'farhan@du.ac.bd', 5),
+    (1, 'Dr. Md. Mamun-Or-Rashid', 'Professor', 'mamun@cse.du.ac.bd', 5),
+    (1, 'Dr. Mosaddek Hossain Kamal -- Tushar', 'Professor', 'tushar@cse.univdhaka.edu', 5),
+    (1, 'Mrs. Upama Kabir', 'Professor', 'upama2@gmail.com', 5),
+    (1, 'Md. Asif Hossain Khan', 'Professor', 'asif@du.ac.bd', 5),
+    (1, 'Dr. Syed Faisal Hasan', 'Associate Professor', 'hasansf@gmail.com', 5),
+    (1, 'Abu Ahmed Ferdouse', 'Associate Professor', 'ferdaus@du.ac.bd', 5),
+    (1, 'Shaily Kabir', 'Associate Professor', 'shailykabir2000@yahoo.com', 5),
+    (1, 'Moinul Islam Zaber', 'Associate Professor', 'zaber@du.ac.bd', 5),
+    (1, 'Mosarrat Jahan', 'Associate Professor', 'mosarratjahan@yahoo.com', 5),
+    (1, 'Dr. Ismat Rahman', 'Associate Professor', 'ismat@cse.du.ac.bd', 5),
+    (1, 'Dr. Sarker Tanveer Ahmed Rumee', 'Assistant Professor', 'rumee@cse.du.ac.bd', 5),
+    (1, 'Hasnain Heickal', 'Assistant Professor', 'hasnain@cse.univdhaka.edu', 5),
+    (1, 'Dr. Md. Mosaddek Khan', 'Assistant Professor', 'mosaddek@cse.univdhaka.edu', 5),
+    (1, 'Md. Samiullah', 'Assistant Professor', 'samiullah@cse.du.ac.bd', 5),
+    (1, 'Dr. Muhammad Ibrahim', 'Assistant Professor', 'ibrahim313@du.ac.bd', 5),
+    (1, 'Tamal Adhikary', 'Lecturer', 'tamal@cse.du.ac.bd', 5),
+    (1, 'MD MOFIJUL ISLAM', 'Lecturer', 'akash@du.ac.bd', 5),
+    (1, 'Mubin Ul Haque', 'Lecturer', 'mubin@cse.du.ac.bd', 5),
+    (1, 'Zarrin Tasnim Sworna', 'Lecturer', 'zarrinsworna@gmail.com', 5),
+    (1, 'Md. Mahmudur Rahman', 'Lecturer', 'mrr.rana13@gmail.com', 5),
+    (1, 'Md. Ashraful Islam', 'Lecturer', 'ashraful@du.ac.bd', 5);
+INSERT INTO professors (university_id, full_name, Designation, Email, sub_id)
+VALUES
+    (2, 'Dr. Mahmuda Naznin', 'Professor', 'mahmudanaznin@cse.buet.ac.bd, mahmudanaznin@gmail.com', 5),
+    (2, 'Dr. Muhammad Masroor Ali', 'Professor', 'mmasroorali@cse.buet.ac.bd', 5),
+    (2, 'Dr. Md. Saidur Rahman', 'Professor', 'saidurrahman@cse.buet.ac.bd', 5),
+    (2, 'Dr. Md. Monirul Islam', 'Professor', 'mdmonirulislam@cse.buet.ac.bd', 5),
+    (2, 'Dr. Md. Mostofa Akbar', 'Professor', 'mostofa@cse.buet.ac.bd', 5),
+    (2, 'Dr. Abu Sayed Md. Latiful Hoque', 'Professor', 'asmlatifulhoque@cse.buet.ac.bd', 5);
+
+INSERT INTO professors (university_id, full_name, Designation, Email, sub_id)
+VALUES
+    (2, 'Dr. M. Sohel Rahman', 'Professor', 'msrahman@cse.buet.ac.bd, sohel.kcl@gmail.com', 5),
+    (2, 'Dr. A.K.M. Ashikur Rahman', 'Professor', 'ashikur@cse.buet.ac.bd', 5),
+    (2, 'Dr. Mohammed Eunus Ali', 'Professor', 'eunus@cse.buet.ac.bd, mohammed.eunus.ali@gmail.com', 5),
+    (2, 'Dr. Md. Monirul Islam', 'Professor', 'mmislam@cse.buet.ac.bd', 5),
+    (2, 'Dr. Tanzima Hashem', 'Professor', 'tanzimahashem@cse.buet.ac.bd, tanzimahashem@gmail.com', 5),
+    (2, 'Dr. Md. Shohrab Hossain', 'Professor', 'mshohrabhossain@cse.buet.ac.bd', 5),
+    (2, 'Dr. A. B. M. Alim Al Islam', 'Professor', 'alim_razi@cse.buet.ac.bd', 5),
+    (2, 'Dr. Anindya Iqbal', 'Professor', 'anindya_iqbal@yahoo.com, anindya@cse.buet.ac.bd', 5),
+    (2, 'Dr. Rifat Shahriyar', 'Professor', 'rifat.shahriyar@gmail.com, rifat@cse.buet.ac.bd', 5),
+    (2, 'Dr. Muhammad Abdullah Adnan', 'Professor', 'abdullah.adnan@gmail.com, adnan@cse.buet.ac.bd', 5),
+    (2, 'Dr. Mohammad Saifur Rahman', 'Professor', 'mrahman@cse.buet.ac.bd', 5),
+    (2, 'Dr. Md. Shamsuzzoha Bayzid', 'Associate Professor', 'shams.bayzid@gmail.com, shams_bayzid@cse.buet.ac.bd', 5),
+    (2, 'Dr. Atif Hasan Rahman', 'Associate Professor', 'atif@cse.buet.ac.bd', 5),
+    (2, 'Dr. Sadia Sharmin', 'Associate Professor', 'sadiasharmin@cse.buet.ac.bd, sadiasharmin.ss@gmail.com', 5),
+    (2, 'Abu Wasif', 'Associate Professor', 'wasif@cse.buet.ac.bd', 5),
+    (2, 'Sukarna Barua', 'Associate Professor', 'sukarna.barua@gmail.com, sukarnabarua@cse.buet.ac.bd', 5),
+    (2, 'Tanveer Awal', 'Assistant Professor', 'tanveerawal@cse.buet.ac.bd', 5),
+    (2, 'Khaled Mahmud Shahriar', 'Assistant Professor', 'k.m.shahriar@gmail.com, khaledshahriar@cse.buet.ac.bd', 5),
+    (2, 'Md. Shariful Islam Bhuyan', 'Assistant Professor', 'sharifulislam@cse.buet.ac.bd', 5),
+    (2, 'Dr. Muhammad Ali Nayeem', 'Assistant Professor', 'ali_nayeem@cse.buet.ac.bd', 5),
+    (2, 'Dr. Rezwana Reaz', 'Assistant Professor', 'rimpi@cse.buet.ac.bd, rezwana@teacher.cse.buet.ac.bd', 5),
+    (2, 'Tahmid Hasan', 'Assistant Professor', 'tahmid@teacher.cse.buet.ac.bd', 5),
+    (2, 'Md. Masum Mushfiq', 'Lecturer', 'masummushfiq@cse.buet.ac.bd', 5),
+    (2, 'Md. Toufikuzzaman', 'Lecturer', 'md.toufikzaman@gmail.com, toufikuzzaman@teacher.cse.buet.ac.bd', 5),
+    (2, 'Rayhan Rashed', 'Lecturer', 'rayhan@cse.buet.ac.bd', 5),
+    (2, 'Mohammad Tawhidul Hasan Bhuiyan', 'Lecturer', 'tawhid@cse.buet.ac.bd', 5),
+    (2, 'Navid Bin Hasan', 'Lecturer', 'navidhasan0@gmail.com, navid@teacher.cse.buet.ac.bd', 5);
