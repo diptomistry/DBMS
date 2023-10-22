@@ -1441,6 +1441,15 @@ VALUES
     ('Departments', 1, 83),
     ('Institutes', 1, 12),
     ('Residential Halls', 1, 20),
-    ('Hostels',  1, 3),
+
     ('Research Centres',  1, 56),
     ('Library',  1, 3);
+INSERT INTO facilities (facility_name, university_id, facility_weight)
+VALUES
+    ('Faculties', 2, 6),
+    ('Departments', 2, 18),
+    ('Institutes', 2, 6),
+    ('Residential Halls', 2, 8),
+    
+    ('Research Centres',  1, 6),
+    ('Library',  2, 2);
