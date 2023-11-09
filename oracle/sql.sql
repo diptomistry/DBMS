@@ -8,6 +8,7 @@ CREATE TABLE universities (
     type VARCHAR2(20),
     QSWorldRanking_2023 VARCHAR2(20)
 );
+
 CREATE TABLE subjects (
     sub_id NUMBER PRIMARY KEY,
     sub_name VARCHAR2(255),
@@ -18,10 +19,10 @@ CREATE TABLE alumni (
     sub_id NUMBER,
     full_name VARCHAR2(255),
     degree_earned VARCHAR2(255),
-    current_employer VARCHAR2(255),
-    current_designation VARCHAR2(255),
+    Current_Employer VARCHAR2(255),
+    Current_Designation VARCHAR2(255),
     location VARCHAR2(255),
-    batch NUMBER,
+    batch VARCHAR2(255),
     university_id NUMBER,
     FOREIGN KEY (university_id) REFERENCES universities(university_id),
     FOREIGN KEY (sub_id) REFERENCES subjects(sub_id)
@@ -40,6 +41,7 @@ CREATE TABLE professors (
     full_name VARCHAR2(255),
     sub_id NUMBER,
     university_id NUMBER,
+    Designation VARCHAR2(255),
     email VARCHAR2(255),
     FOREIGN KEY (sub_id) REFERENCES subjects(sub_id),
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
@@ -74,3 +76,4 @@ CREATE TABLE university_metrics (
     year NUMBER,  -- Assuming it's a numeric value
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
+                              ----data inserted from csv file--
