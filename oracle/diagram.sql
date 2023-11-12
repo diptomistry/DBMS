@@ -74,7 +74,7 @@ TABLE awards {
     year NUMBER
 
     recipient_id NUMBER [ref: > professors.professor_id]
-    //recipient_id INT [ref: > alumni.alumni_id]
+    //recipient_id NUMBER [ref: > alumni.alumni_id]
                     
     
 }
