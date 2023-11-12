@@ -1,4 +1,4 @@
-
+https://dbdiagram.io/d/64cea2ad02bd1c4a5e4c597c
 TABLE universities {
         university_id NUMBER [PRIMARY KEY]
     university_name VARCHAR2(255)
