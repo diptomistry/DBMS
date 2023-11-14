@@ -77,3 +77,6 @@ CREATE TABLE university_metrics (
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
                               ----data inserted from csv file--
+INSERT INTO subject_rankings (sub_ranking_id, ranking, year, university_id, sub_id)
+VALUES
+    (3, '651-680', 2023, 16, 5);
