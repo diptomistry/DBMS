@@ -76,7 +76,7 @@ CREATE TABLE university_metrics (
     year NUMBER,  -- Assuming it's a numeric value
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
-
+--trigger
 create or replace TRIGGER trg_before_UniversityData_change
 BEFORE INSERT OR DELETE OR UPDATE ON universities
 FOR EACH ROW
@@ -100,7 +100,7 @@ BEGIN
 
 END;
 
-SET SERVEROUTPUT ON;
+SET SERVEROUTPUT ON; 
 
 
                               ----data inserted from csv file--
