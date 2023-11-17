@@ -77,32 +77,31 @@ CREATE TABLE university_metrics (
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
 
--- Creating a trigger for BEFORE INSERT OR DELETE OR UPDATE
-CREATE OR REPLACE TRIGGER trg_before_subject_change
-BEFORE INSERT OR DELETE OR UPDATE ON subjects
+create or replace TRIGGER trg_before_UniversityData_change
+BEFORE INSERT OR DELETE OR UPDATE ON universities
 FOR EACH ROW
 DECLARE
-    v_action VARCHAR2(20); -- Variable to store the action (INSERT/DELETE/UPDATE)
+    v_user VARCHAR2(20); 
 BEGIN
+    SELECT user INTO v_user From dual;
     IF INSERTING THEN
-        v_action := 'INSERT';
-        DBMS_OUTPUT.PUT_LINE('You just inserted a line, Mr. ' || v_action);
-        -- Additional logic or checks for INSERT can be performed here
+
+       DBMS_OUTPUT.PUT_LINE('New data is inserted in the UNIVERSITIES table by '||v_user);
+
     ELSIF DELETING THEN
-        v_action := 'DELETE';
-        DBMS_OUTPUT.PUT_LINE('You just deleted a line, Mr. ' || v_action);
-        -- Additional logic or checks for DELETE can be performed here
+
+        DBMS_OUTPUT.PUT_LINE('New data is deleteded from the UNIVERSITIES table by '||v_user );
+
     ELSIF UPDATING THEN
-        v_action := 'UPDATE';
-        DBMS_OUTPUT.PUT_LINE('You just updated a line, Mr. ' || v_action);
-        -- Additional logic or checks for UPDATE can be performed here
+
+        DBMS_OUTPUT.PUT_LINE('New data is updated in the UNIVERSITIES table by '||v_user);
+
     END IF;
-    
-    -- You can use the variable v_action or perform other actions based on the operation type
-    -- For example:
-    -- DBMS_OUTPUT.PUT_LINE('Action: ' || v_action);
+
 END;
-/
+
+SET SERVEROUTPUT ON;
+
 
                               ----data inserted from csv file--
 INSERT INTO subject_rankings (sub_ranking_id, ranking, year, university_id, sub_id)
