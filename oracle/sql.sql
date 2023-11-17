@@ -120,8 +120,8 @@ ENABLE--will start working as soon as we compile
 DECLARE
   v_user varchar2 (30);--to store username
   v_date  varchar2(30);--to store entry date
-BEGIN
-  SELECT user, TO_CHAR(sysdate, 'DD/MON/YYYY HH24:MI:SS') INTO v_user, v_date  FROM dual;
+BEGIN--user is a pseudocolumn that returns the current database user.
+  SELECT user, TO_CHAR(sysdate, 'DD/MON/YYYY HH24:MI:SS') INTO v_user, v_date  FROM dual;-- converts the sysdate (current date and time) into a specific string format
   IF INSERTING THEN
     INSERT INTO university_audit (new_name,old_name, user_name, entry_date, operation) 
     VALUES(:NEW.university_name, Null , v_user, v_date, 'Insert');  
