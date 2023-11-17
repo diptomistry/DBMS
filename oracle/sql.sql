@@ -76,7 +76,46 @@ CREATE TABLE university_metrics (
     year NUMBER,  -- Assuming it's a numeric value
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
+
+-- Creating a trigger for BEFORE INSERT OR DELETE OR UPDATE
+CREATE OR REPLACE TRIGGER trg_before_subject_change
+BEFORE INSERT OR DELETE OR UPDATE ON subjects
+FOR EACH ROW
+DECLARE
+    v_action VARCHAR2(20); -- Variable to store the action (INSERT/DELETE/UPDATE)
+BEGIN
+    IF INSERTING THEN
+        v_action := 'INSERT';
+        DBMS_OUTPUT.PUT_LINE('You just inserted a line, Mr. ' || v_action);
+        -- Additional logic or checks for INSERT can be performed here
+    ELSIF DELETING THEN
+        v_action := 'DELETE';
+        DBMS_OUTPUT.PUT_LINE('You just deleted a line, Mr. ' || v_action);
+        -- Additional logic or checks for DELETE can be performed here
+    ELSIF UPDATING THEN
+        v_action := 'UPDATE';
+        DBMS_OUTPUT.PUT_LINE('You just updated a line, Mr. ' || v_action);
+        -- Additional logic or checks for UPDATE can be performed here
+    END IF;
+    
+    -- You can use the variable v_action or perform other actions based on the operation type
+    -- For example:
+    -- DBMS_OUTPUT.PUT_LINE('Action: ' || v_action);
+END;
+/
+
                               ----data inserted from csv file--
 INSERT INTO subject_rankings (sub_ranking_id, ranking, year, university_id, sub_id)
 VALUES
     (3, '651-680', 2023, 16, 5);
+
+INSERT INTO subjects (sub_id, sub_name, subject_type)
+SELECT 92, 'Soil, Water, and Environment Science', 'Social Science'
+FROM dual--require a FROM clause, but the operation isn't related to any actual table data.
+    --DUAL is a special table in Oracle that has a single row and single column and is commonly used as a dummy table
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM subjects
+    WHERE sub_name = 'Soil, Water, and Environment Science'
+);
+
