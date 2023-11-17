@@ -79,11 +79,13 @@ CREATE TABLE university_metrics (
 --trigger
 create or replace TRIGGER trg_before_UniversityData_change
 BEFORE INSERT OR DELETE OR UPDATE ON universities
-FOR EACH ROW
+FOR EACH ROW--operates on each row affected by the triggering statement 
 DECLARE
-    v_user VARCHAR2(20); 
+    v_user VARCHAR2(20); --to store the username
 BEGIN
     SELECT user INTO v_user From dual;
+-- retrieves the current database user and assigns it to the v_user variable.
+--DUAL is a dummy table in Oracle, and user is a pseudocolumn that represents the current user.
     IF INSERTING THEN
 
        DBMS_OUTPUT.PUT_LINE('New data is inserted in the UNIVERSITIES table by '||v_user);
@@ -102,6 +104,38 @@ END;
 
 SET SERVEROUTPUT ON; 
 
+
+--making audit
+create table university_audit(
+new_name varchar2(30),
+old_name varchar2(30),
+user_name varchar(30),
+entry_date varchar2(30),
+operation varchar2(30)
+);
+CREATE OR REPLACE trigger university_audit
+BEFORE INSERT OR DELETE OR UPDATE ON universities
+FOR EACH ROW
+ENABLE--will start working as soon as we compile
+DECLARE
+  v_user varchar2 (30);--to store username
+  v_date  varchar2(30);--to store entry date
+BEGIN
+  SELECT user, TO_CHAR(sysdate, 'DD/MON/YYYY HH24:MI:SS') INTO v_user, v_date  FROM dual;
+  IF INSERTING THEN
+    INSERT INTO university_audit (new_name,old_name, user_name, entry_date, operation) 
+    VALUES(:NEW.university_name, Null , v_user, v_date, 'Insert');  
+  ELSIF DELETING THEN
+    INSERT INTO university_audit (new_name,old_name, user_name, entry_date, operation)
+    VALUES(NULL,:OLD.university_name, v_user, v_date, 'Delete');
+  ELSIF UPDATING THEN
+    INSERT INTO university_audit (new_name,old_name, user_name, entry_date, operation) 
+    VALUES(:NEW.university_name, :OLD.university_name, v_user, v_date,'Update');
+  END IF;
+END;
+--:NEW and :OLD are pseudorecords
+/
+ 
 
                               ----data inserted from csv file--
 INSERT INTO subject_rankings (sub_ranking_id, ranking, year, university_id, sub_id)
