@@ -136,6 +136,26 @@ END;
 --:NEW and :OLD are pseudorecords
 /
  
+CREATE TABLE schema_audit
+  (
+    ddl_date       DATE,
+    ddl_user       VARCHAR2(15),
+    object_created VARCHAR2(15),
+    object_name    VARCHAR2(15),
+    ddl_operation  VARCHAR2(15)
+  );
+CREATE OR REPLACE TRIGGER audit_tr 
+AFTER DDL ON SCHEMA
+BEGIN
+    INSERT INTO schema_audit VALUES (
+sysdate, --date
+sys_context('USERENV','CURRENT_USER'), 
+ora_dict_obj_type, -- type of the dictionary object(for example table)
+ora_dict_obj_name, --obj name(table name)
+ora_sysevent);--ddl name
+END;
+/
+
 
                               ----data inserted from csv file--
 INSERT INTO subject_rankings (sub_ranking_id, ranking, year, university_id, sub_id)
