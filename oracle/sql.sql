@@ -67,15 +67,21 @@ CREATE TABLE awards (
     FOREIGN KEY (recipient_id) REFERENCES alumni(alumni_id) ON DELETE CASCADE
 );
 
--- Create Financial Data Table
+
 CREATE TABLE university_metrics (
-    metric_id NUMBER PRIMARY KEY,
     university_id NUMBER,
-    metric_name VARCHAR2(100),
-    value NUMBER,  -- Assuming it's a numeric value
-    year NUMBER,  -- Assuming it's a numeric value
+    Budget NUMBER,
+    FacultyToStudentRatio VARCHAR2(20),
+    ResearchFunding NUMBER,
+    CampusSize NUMBER,
+    GraduationRate NUMBER,
+    AcceptanceRate NUMBER,
+    SatisfactionRating NUMBER,
+    Endowment NUMBER,
+    ResearchPublications NUMBER
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
+
 --trigger
 create or replace TRIGGER trg_before_UniversityData_change
 BEFORE INSERT OR DELETE OR UPDATE ON universities
@@ -141,7 +147,7 @@ CREATE TABLE schema_audit
     ddl_date       DATE,
     ddl_user       VARCHAR2(15),
     object_created VARCHAR2(15),
-    object_name    VARCHAR2(15),
+    object_name    VARCHAR2(30),
     ddl_operation  VARCHAR2(15)
   );
 CREATE OR REPLACE TRIGGER audit_tr 
