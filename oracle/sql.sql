@@ -70,6 +70,7 @@ CREATE TABLE awards (
 
 CREATE TABLE university_metrics (
     university_id NUMBER,
+    Enrollment NUMBER,
     Budget_in_crore NUMBER,
     FacultyToStudentRatio VARCHAR2(20),
     ResearchFunding_in_crore NUMBER,
