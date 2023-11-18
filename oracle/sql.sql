@@ -123,6 +123,12 @@ user_name varchar(30),
 entry_date varchar2(30),
 operation varchar2(30)
 );
+ALTER TABLE university_audit
+MODIFY new_name VARCHAR2(100);
+ALTER TABLE university_audit
+MODIFY old_name VARCHAR2(100);
+
+
 CREATE OR REPLACE trigger university_audit
 BEFORE INSERT OR DELETE OR UPDATE ON universities
 FOR EACH ROW
