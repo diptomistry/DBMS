@@ -72,13 +72,14 @@ CREATE TABLE university_metrics (
     university_id NUMBER,
     Budget_in_crore NUMBER,
     FacultyToStudentRatio VARCHAR2(20),
-    ResearchFunding NUMBER,
-    CampusSize NUMBER,
+    ResearchFunding_in_crore NUMBER,
+    CampusSize_in_acre NUMBER,
     GraduationRate NUMBER,
     AcceptanceRate NUMBER,
     SatisfactionRating NUMBER,
-    Endowment NUMBER,
+    Endowment_in_crore NUMBER,
     ResearchPublications NUMBER,
+    Year NUMBER,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
 
