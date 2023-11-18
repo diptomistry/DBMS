@@ -181,3 +181,8 @@ WHERE NOT EXISTS (
     WHERE sub_name = 'Soil, Water, and Environment Science'
 );
 
+
+INSERT INTO university_metrics
+VALUES (1, 37018,913, '1/19', 50, 6002023,0.75, 0.15,0.95, 100, 2000,2023);
+INSERT INTO university_metrics
+VALUES (2, 6237,228.4, '1/13.2', 50,752023,0.95, 0.12,0.85, 100, 1000,2023);
