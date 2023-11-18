@@ -69,6 +69,7 @@ CREATE TABLE awards (
 
 
 CREATE TABLE university_metrics (
+    metric_id NUMBER PRIMARY KEY,
     university_id NUMBER,
     Enrollment NUMBER,
     Budget_in_crore NUMBER,
@@ -183,18 +184,19 @@ WHERE NOT EXISTS (
 
 
 INSERT INTO university_metrics
-VALUES (1, 37018,913, '1/19', 50, 6002023,0.75, 0.15,0.95, 100, 2000,2023);
+VALUES (1,1, 37018,913, '1/19', 50, 6002023,0.75, 0.15,0.95, 100, 2000,2023);
 INSERT INTO university_metrics
-VALUES (2, 6237,228.4, '1/13.2', 50,752023,0.95, 0.12,0.85, 100, 1000,2023);
-INSERT INTO university_metrics (university_id, Budget_in_crore, Year)
-VALUES (4,456.75, 2023);
-INSERT INTO university_metrics (university_id, Budget_in_crore, Year)
-VALUES (5,279.13, 2023);
-INSERT INTO university_metrics (university_id, Budget_in_crore, Year)
-VALUES (7,168.36, 2023);
-INSERT INTO university_metrics (university_id, Budget_in_crore, Year)
-VALUES (8,85.28, 2023);
-INSERT INTO university_metrics (university_id, Budget_in_crore, Year)
-VALUES (31,112.21, 2023);
-INSERT INTO university_metrics (university_id, Budget_in_crore, Year)
-VALUES (30,179.74, 2023);
+VALUES (2,2, 6237,228.4, '1/13.2', 50,752023,0.95, 0.12,0.85, 100, 1000,2023);
+INSERT INTO university_metrics (metric_id,university_id, Budget_in_crore, Year)
+VALUES (3,4,456.75, 2023);
+INSERT INTO university_metrics (metric_id,university_id, Budget_in_crore, Year)
+VALUES (4,5,279.13, 2023);
+INSERT INTO university_metrics (metric_id,university_id, Budget_in_crore, Year)
+VALUES (5,7,168.36, 2023);
+INSERT INTO university_metrics (metric_id,university_id, Budget_in_crore, Year)
+VALUES (6,8,85.28, 2023);
+INSERT INTO university_metrics (metric_id,university_id, Budget_in_crore, Year)
+VALUES (7,31,112.21, 2023);
+INSERT INTO university_metrics (metric_id,university_id, Budget_in_crore, Year)
+VALUES (8,30,179.74, 2023);
+
