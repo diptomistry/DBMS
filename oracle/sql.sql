@@ -70,7 +70,7 @@ CREATE TABLE awards (
 
 CREATE TABLE university_metrics (
     university_id NUMBER,
-    Budget NUMBER,
+    Budget_in_crore NUMBER,
     FacultyToStudentRatio VARCHAR2(20),
     ResearchFunding NUMBER,
     CampusSize NUMBER,
@@ -78,9 +78,10 @@ CREATE TABLE university_metrics (
     AcceptanceRate NUMBER,
     SatisfactionRating NUMBER,
     Endowment NUMBER,
-    ResearchPublications NUMBER
+    ResearchPublications NUMBER,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
+
 
 --trigger
 create or replace TRIGGER trg_before_UniversityData_change
