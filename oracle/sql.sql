@@ -206,3 +206,11 @@ VALUES (7,31,112.21, 2023);
 INSERT INTO university_metrics (metric_id,university_id, Budget_in_crore, Year)
 VALUES (8,30,179.74, 2023);
 
+UPDATE universities
+SET ranking_2023 = 3  -- Replace [new_value] with the updated ranking value
+WHERE university_id = 12;
+
+UPDATE universities
+SET ranking_2023 = 2  -- Replace [new_value] with the updated ranking value
+WHERE university_id = 2;
+
