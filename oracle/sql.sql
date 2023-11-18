@@ -30,7 +30,7 @@ CREATE TABLE alumni (
 CREATE TABLE subject_rankings (
     sub_ranking_id NUMBER PRIMARY KEY,
     ranking VARCHAR2(20),
-    year NUMBER,  -- Assuming "year" is a numeric value, adjust accordingly if it's a date
+    year NUMBER, 
     university_id NUMBER,
     sub_id NUMBER,
     FOREIGN KEY (university_id) REFERENCES universities(university_id),
