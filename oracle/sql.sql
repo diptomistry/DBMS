@@ -48,14 +48,18 @@ CREATE TABLE professors (
 );
 
 
--- Create Facilities Table
 CREATE TABLE facilities (
     facility_id NUMBER PRIMARY KEY,
-    facility_name VARCHAR2(255),
-    facility_weight NUMBER,  -- Assuming it's a numeric value
+    Faculty_number NUMBER,
+    Departments_num NUMBER,
+    Institutes_num NUMBER,
+    Residential_Halls_num NUMBER,
+    Research_Centres NUMBER,
+    Library NUMBER,
     university_id NUMBER,
     FOREIGN KEY (university_id) REFERENCES universities(university_id)
 );
+
 
 -- Create Awards Table
 CREATE TABLE awards (
@@ -213,4 +217,7 @@ WHERE university_id = 12;
 UPDATE universities
 SET ranking_2023 = 2  -- Replace [new_value] with the updated ranking value
 WHERE university_id = 2;
-
+INSERT INTO facilities (facility_id, Faculty_number, Departments_num, Institutes_num, Residential_Halls_num, Research_Centres, Library,  university_id)
+VALUES (1, 13, 83, 12, 20, 56, 3,  1);
+INSERT INTO facilities (facility_id, Faculty_number, Departments_num, Institutes_num, Residential_Halls_num, Research_Centres, Library,  university_id)
+VALUES (2, 6, 18, 6, 8, 6, 2, 2);
