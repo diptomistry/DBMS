@@ -221,3 +221,25 @@ INSERT INTO facilities (facility_id, Faculty_number, Departments_num, Institutes
 VALUES (1, 13, 83, 12, 20, 56, 3,  1);
 INSERT INTO facilities (facility_id, Faculty_number, Departments_num, Institutes_num, Residential_Halls_num, Research_Centres, Library,  university_id)
 VALUES (2, 6, 18, 6, 8, 6, 2, 2);
+
+INSERT INTO universities (
+    university_id,
+    university_name,
+    founded_date,
+    location,
+    website,
+    ranking,
+    type,
+    QSWorldRanking,
+    RANKING_YEAR
+) VALUES (
+    200,
+    'Example University',
+    TO_DATE('01-JUL-2021', 'DD-MON-YYYY'),
+    'City ABC',
+    'http://exampleuniversity.com',
+    1000,
+    'Public',
+    'Top 500',
+    2022
+);
