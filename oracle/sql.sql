@@ -243,3 +243,11 @@ INSERT INTO universities (
     'Top 500',
     2022
 );
+CREATE TABLE example (
+    id NUMBER PRIMARY KEY,
+    name VARCHAR2(255),
+    description VARCHAR2(500),
+    created_date DATE,
+    is_active BOOLEAN
+);
+
